@@ -2,461 +2,739 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT US / MDS</title>
-    <link rel="shortcut icon" href="image/Meta Logo Final 1.png" type="image/x-icon">
+    <title>About Us</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,wght@1,300&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;400;700;800&family=Nunito:wght@700&family=Red+Hat+Display&display=swap" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://kit.fontawesome.com/38e77e8a43.js" crossorigin="anonymous"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- swiper css -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="swiper-bundle.min.css">
-    <!-- swiper css -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+ 
+    
 </head>
-<body>
-    <div class="relative flex flex-col justify-center items-center w-full bg-white">
-
-        <section class="relative bg-no-repeat bg-cover bg-center py-[200px] w-full" style="background-image:url(./image/1607f6bd3c58b17f566ec668aebd0fbb.jpeg);"><!-- page-title -->
-            <div class="relative flex justify-center items-center w-full"><!-- auto-container-->
-                <header id="navbar" class="fixed left-0 top-0 w-full py-0 mb-[50px] z-[999999]">
-                    <div class="static w-full md:flex justify-center items-center  2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
-            
-                        <nav class="h-auto flex md:items-center md:justify-between w-full ">
-                       
-                            <div class="flex justify-between md:justify-start items-center relative w-full ">
+<body class="cursor-auto z-50 bg-black">
+    <div class="relative flex flex-col justify-center items-center w-full bg-black">
+        <header id="top"  class="relative w-full h-auto flex flex-col justify-center items-center  ">
         
-                                <span class="text-2xl cursor-pointer">
-                                    <a href="index.html">
-                                        <img class="w-[60px] sm:w-[89.93px] h-auto " src="image/Meta Logo Final 1.png" alt="logo">
+            <nav id="navbar1" class="z-[9999] fixed top-0 h-[114px] pt-[46px] pb-[26px] bg-[#F1F5FC] flex md:items-center silver:justify-between w-full ">
+            
+                <div class="z-[9999] flex md:items-center silver:justify-between w-full  2xl:w-[1280px] px-[15px] at500:px-[64px] my-0 mx-auto ">
+                    <div class="flex justify-between silver:justify-start items-center relative w-full silver:pr-[20px]">
+                        <!-- logo controls -->
+                        <div class="text-2xl cursor-pointer w-[122.07px] h-[29.52px]">
+                            <a class="w-full" href="index.html">
+                                <img id="second-logo#" class="w-full h-auto transition-all duration-300 ease-in-out" src="image/FT_logo_X5-01.png" alt="logo">
+                                <!-- <img id="first-logo" class="w-full h-auto transition-all duration-300 ease-in-out" src="image/finchglow-logo.png" alt="logo"> -->
+                            </a>
+                        </div>
+                        <!-- menu controls -->
+                        <span class="text-3xl cursor-pointer mx-2 silver:hidden block h-[21.86px] w-[17.21px] ">
+                            <div class="z-[9999]" id="close-Icon" onclick="toggleIcons(), openIcon()">
+                                <img id="second-icon" class="openMenu w-full h-full transition-all duration-300 ease-in-out" src="image/Buttons Container.png" alt="menu"  onclick="show()">
+                                <!-- <img id="first-icon" class="openMenu w-full h-full z-10 transition-all duration-300 ease-in-out" src="image/Buttons Container (1).png" alt="menu"  onclick="show()"> -->
+                            </div>
+                            <div id="open-Icon" class="closeMenu hidden" onclick="toggleIcons(), closeIcon()">
+                                <i id="icon" class="fa-solid fa-xmark transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
+                            </div>
+                        </span>
+                        <!-- menu controls -->
+                    </div>
+                    <!-- drop-menu list -->
+                    <div class="px-2">
+                        <ul id="open1" class="cass flex flex-col silver:flex-row justify-center items-center z-[888] silver:z-auto float-left rounded-[8px] 
+                            silver:static  absolute bg-[#F1F5FC]  w-full left-0  top-[-555px] transition-all ease-in duration-500 ">
+                        
+                
+                            <li class="silver:mr-4 my-6 silver:my-0">
+                                <a class="inline-block py-2 w-[55px] !text-[#05284C] text-[12px] font-bold border-solid border-[#81B0F7]  border-b-[4px] transition-all duration-300 ease-in-out " href="about.html">About Us</a>
+                            </li>
+                            <li class="silver:mr-4 my-6 silver:my-0 ">
+                                <a class="py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="service.html">
+                                    Services
+                                </a>
+                            </li>
+                            <li  class="silver:mr-4 my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
+                                    Branches
+                                </a>
+                            </li>
+                            <li class="silver:mr-4 my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
+                                    Product
+                                </a>
+                            </li>
+                            <li class="silver:mr-4 my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="mx-4 px-[15px] silver:px-0 my-6 md:my-0 w-full md:w-[182px]">
+                                <div class="sm:hidden silver:block items-center justify-end lg:w-[182px] h-auto">
+                                    <a href="contact.html">
+                                        <button class="!text-[12px] !text-[#05284C]">Register as Trade Partner</button>
                                     </a>
-                                </span>
-   
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- drop-menu list -->
+                
+                    <!-- <div class="flex items-center justify-end w-[65px] h-auto ">
+                        <a href="contact.html">
+                            <button class="!text-[12px] !text-[#FFFFFF] !bg-[#05284C] !px-[12px] !border-none">Login</button>
+                        </a>
+                    </div>  -->
+                </div>
+            </nav>
+
+        </header>
         
-                                <ul class="cass md:flex justify-center items-center md:items-center z-[888] md:z-auto float-left rounded-[8px]
-                                        md:static  absolute bg-[#000000b0]  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 lg:pl-7 top-[-400px] transition-all ease-in duration-500">
-                                 
-                                    <li class="lg:mx-4 my-6 md:my-0">
-                                        <a class=" block py-2 px-3 text-[#FFFFFF]  text-[16px] font-bold  hover:bg-[#505050] hover:border-[#19A20C] rounded-[8px] hover:border-[2px] hover:text-[#38E427] transition-all duration-300 ease-in-out" href="index.html">Home</a>
-                                    </li>
-                                    <li class="lg:mx-4 my-6 md:my-0">
-                                        <a class="text-[#19A20C] block py-2 px-3  text-[16px] font-bold  bg-[#505050] border-[#19A20C] rounded-[8px] border-[2px] transition-all duration-300 ease-in-out" href="about.html">About Us</a>
-                                    </li>
-                                    <li class="lg:mx-4 my-6 md:my-0">
-                                        <a class="text-[#FFFFFF] block py-2 px-3  text-[16px] font-bold  hover:bg-[#505050] hover:border-[#19A20C] rounded-[8px] hover:border-[2px] hover:text-[#38E427] transition-all duration-300 ease-in-out" href="#">Our Works</a>
-                                    </li>
-                                    <li class="mx-4 my-6 md:my-0">
-                                        <div class="md:hidden block items-center justify-end w-[223px] h-[43.41px]">
-                                            <a href="contact.html">
-                                                <button>Contact Us</button>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-       
-                                <span class="text-3xl cursor-pointer mx-2 md:hidden block rounded-[8px] border-[2px] border-[#817474] ">
-                                    <ion-icon class="text-[29px] sm:text-[33px] text-[#38E427]" name="menu" onclick="Menu(this)"></ion-icon>
+
+        <main class="w-full h-auto flex flex-col justify-center items-center pt-[114px]">
+             <!-- About Us -->
+             <section class="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full  overflow-hidden">
+                <div class="static w-full  flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[60px] at500:px-[64px] md:pr-[64px] md:pl-[94px]  my-0 mx-auto">
+                    <div class="flex flex-col lg:flex-row justify-center items-center w-full gap-[30px]">
+
+                        <div class="relative flex flex-col justify-center items-start w-full xl:w-[652px] text-left gap-[17px] ">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#0260EE]">
+                                About us
+                            </span>
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] xl:w-[595px]">
+                                We are Nigeria’s Premier Indigenous Travel Consolidator
+                            </h3>
+                        </div>
+                    
+                        <div class="relative flex flex-col justify-center items-start lg:px-[30px] py-0 w-full h-auto ">
+                            <div class="flex flex-col justify-center items-center border-l-[#CCDFFC] border-l-[4px] px-[20px]">
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2  py-0 text-[#697E94] text-left xl:w-[340px]">
+                                    Our company has consistently delivered quality and unequalled customer service to travel agencies, 
+                                    corporate organisations, and individual clients.
                                 </span>
-                 
                             </div>
-                      
-                            <div class="hidden md:block items-center justify-end w-[223px] h-auto">
-                                <a href="contact.html">
-                                    <button>Contact Us</button>
-                                </a>
-                            </div>
-                        </nav>
+                        </div>
+                    
+                    </div>
+                </div>
+                 <!-- image background -->
+                <div class="relative bg-white flex flex-col justify-center items-center bg-fixed bg-no-repeat bg-cover bg-center h-[474px] py-[70px] w-full overflow-hidden" style="background-image:url(./image/room.jpeg);"></div>
+            </section>
             
-                    </div>
-                </header>
-                <div class="absolute bottom-[37px] flex flex-col justify-center items-center">
-                    <h2 class="pb-[15px] text-white">About Us</h2>
-                    <!-- <hr class="text-[36px] font-bold w-[154px] h-[7px] rounded-[8px] border-none bg-[#c9dbd0]"> -->
-                </div>
-            </div><!-- auto-container-->
-        </section><!-- page-title -->
+            <!-- Providing excellent -->
+            <section class="relative bg-white flex flex-col justify-center items-center bg-fixed bg-no-repeat bg-cover bg-center w-full overflow-hidden" style="background-image:url(./image/circle.png);">
+                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] pt-[70px] pb-[55px] at500:px-[64px] md:pr-[64px] md:pl-[94px]  my-0 mx-auto">
+                    <div class="flex flex-col lg:flex-row justify-between items-start w-full">
 
-        <main class= "relative bg-white flex justify-center flex-col items-center w-full h-auto my-[50px]">
-            <!---creating a balance-->
-            <section class="relative flex flex-col justify-center items-center w-full h-auto my-[20px] sm:my-[50px]">
-                <div class="static w-full flex justify-center items-center 2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
-                    <div class="flex flex-col-reverse sm:flex-col lg:flex-row justify-between gap-[20px]  items-center w-full h-auto">
+                        <div class="relative flex flex-col justify-start items-start gap-[6px] w-full h-auto text-left ">
+                            <!-- <span class="txt2 text-[#3580F1]">
+                                Where we are
+                            </span> -->
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#05284C] lg:w-[380px] mb-[30px]">
+                                Providing excellent travel solutions to our business partners
+                            </h3>
+                        </div>
+
+                        <div  class="relative flex flex-col justify-center items-start w-full h-auto text-left ">
+                           <div class="relative flex flex-col justify-center items-start gap-[20px] w-full  h-auto text-left">
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#697E94] xl:w-[584px]">
+                                    Finchglow Travels was founded in June 2006 with a passion for excellent customer service. Over the years, 
+                                    we have continued to lead growth within the travel industry in Nigeria in partnership with our incredible clients.
+                                </span>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 !text-[#697E94] xl:w-[584px]">
+                                    At Finchglow Travels, we believe that being a travel consolidator is about more than just selling flight tickets. 
+                                    For us, it is a commitment to harmonise the activities of a critical industry such as Travels to benefit every stakeholder. 
+                                    Whether you're a trade partner seeking a lucrative affiliate partnership or a corporate entity in search of a reliable travel 
+                                    management partner for your business travels, we have the expertise, experience, global network, and dedication to meet and exceed your expectations.
+                                </span>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 !text-[#697E94] xl:w-[584px]">
+                                     Our people are highly trained and equipped to provide personalised services to each client in the most efficient and cost-effective way. 
+                                    We focus on coming alongside you as a partner, not just a vendor, and ensure that your business goals remain front and centre every step of 
+                                    the journey. We’re excited to simplify travels for our partners and streamline corporate bookings with innovative technology and expertise. 
+                                </span>
+                           </div>
+                            <!-- <a href="#" class="btn !text-[#0260EE] ">Contact us
+                                <img class="w-[11px]" src="image/arrow-up.png" alt="arrow up">
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- our Mission -->
+            <section class="relative bg-[#F1F5FC] flex flex-col justify-center items-center w-full overflow-hidden">
+                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] at500:px-[64px] py-[55px] lg:pb-[200px] lg:pt-[55px] md:pl-[94px] md:pr-[64px] lg:pl-0 my-0 mx-auto">
+                    <div class="flex flex-col lg:flex-row justify-between items-center  w-full">
+
+                        <div class="relative w-full h-auto mb-[30px]">
+                            <img src="image/report1 1898.png" class="w-full h-auto lg:w-[600px] lg:h-[570px] object-cover" alt="">
+                        </div>
+
+                        <div class="relative flex flex-col justify-center items-center gap-[17px] w-full h-auto text-left ">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#3580F1] text-left w-full silver:w-[500px]">
+                                Mission
+                            </span>
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#05284C] w-full silver:w-[500px]">
+                                To redefine standards by rendering exceptional service delivery through highly effective people, innovation, and technology.
+                            </h3>
+                        </div>
+
+                    
+                    </div>
+                </div>
+            </section>
+
+            <!-- our vision -->
+            <section class="relative bg-custom-gradient flex flex-col justify-center items-center w-full h-auto lg:h-[550px] overflow-hidden z-[22] lg:overflow-visible">
+                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[55px] lg:pb-[70px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+                    <div class="flex flex-col-reverse lg:flex-row justify-between items-center  w-full h-auto ">
+
+                        <div class="relative flex flex-col justify-center items-start gap-[17px] w-full h-auto text-left ">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#3580F1] text-left silver:w-[446px]">
+                                Vision
+                            </span>
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#05284C] silver:w-[446px]">
+                                To be the foremost indigenous travel consolidator.
+                            </h3>
+                        </div>
+
+                        <div class="relative lg:top-[-49px] flex justify-end items-end w-full h-auto mb-[30px] lg:mb-0">
+                            <img src="image/333.jpeg" class="w-full h-auto lg:w-[508px] lg:h-[570px] object-cover" alt="">
+                        </div>                        
+                    </div> 
+                </div>
+            </section>
+
+            <!--  Our Values -->
+            <section class="relative bg-[#03182E] flex flex-col justify-center items-center w-full h-auto lg:h-[550px] overflow-hidden z-[22] lg:overflow-visible">
+                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[55px] lg:pb-[70px] at500:px-[64px] md:pr-[64px] md:pl-[94px] my-0 mx-auto">
+                    <div class="flex flex-col lg:flex-row justify-between items-center gap-[30px] w-full h-auto ">
+
+                        <div class="relative flex flex-col justify-center items-start gap-[17px] w-full h-auto text-left ">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#67A0F5] text-left silver:w-[502px]">
+                                Our Values
+                            </span>
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#FFFFFF] silver:w-[502px]">
+                                With Finchglow Travels, professionalism isn't just a promise – it's a guarantee
+                            </h3>
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#CDD4DB] silver:w-[468px]">
+                                Our team of travel experts is dedicated to providing unparalleled service, 
+                                backed by years of industry experience and a commitment to excellence.
+                            </span>
+                        </div>
+
+                        <div class="relative flex flex-col justify-center items-start lg:items-end gap-[17px] w-full h-auto text-left ">
+                            <div class="flex flex-col justify-start items-start gap-[20px] silver:w-[431px]">
+                                <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex justify-center items-start gap-[20px] text-left">
+                                    <img src="image/icons/Check icon.png" class="w-[28px] h-[28px]" alt="">
+                                    <span class="txt2 text-[#3580F1] text-left ">Professionalism in Service</span>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex justify-center items-start gap-[20px] text-left">
+                                    <img src="image/icons/Check icon.png" class="w-[28px] h-[28px]" alt="">
+                                    <span class="txt2 text-[#3580F1] text-left ">Integrity in Relationships</span>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex justify-center items-start gap-[20px] text-left">
+                                    <img src="image/icons/Check icon.png" class="w-[28px] h-[28px]" alt="">
+                                    <span class="txt2 text-[#3580F1] text-left ">Excellence in Delivery</span>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div> 
+                </div>
+            </section>
+
+
+            <!-- testimonial -->
+            <section class="relative bg-[#E6EAED] flex justify-center flex-col items-center w-full h-auto silver:h-[412px]">
+                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px] at500:px-[64px] my-0 mx-auto">
+                
+                    <div class="testimonial-container swiper">
+
+                        <div class="testimonial-content swiper-wrapper">
+
+                            
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full ">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full ">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Their support team is very responsive. I always appreciate their<br> 
+                                            prompt responses and their constant availability to assist.
+                                        </p>
+                                        <h2 class="customer_name sas">Gloria T</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas ">
+                                            I’m so grateful for their support team’s guidance. I’ve learned a lot, especially why 
+                                            people can be bounced from flights. The Finchglow Travels team is the best! All my justifications 
+                                            for bringing the company on board have paid off and I’m glad that my team lead who gave approval has 
+                                            also benefited from Finchglow Travels support.
+                                        </p>
+                                        <h2 class="customer_name sas">Ozioma I</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas">Peoples Operations Executive</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            The Finchglow Travels’ protocol team is amazing! 
+                                            They made my entire travel process seamless.
+                                        </p>
+                                        <h2 class="customer_name sas">Vivian I</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas">Admin and Travel Desk Personnel</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            The Finchglow Travels’ team is amazing! They make my day everytime I 
+                                            have to work with them, especially with their travel deals, transparency and honesty, 
+                                            up to giving cashback to agents when there are such opportunities. I love working with them!
+                                        </p>
+                                        <h2 class="customer_name sas">Sarah</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas">Travel Agent</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Travel Agent - The Finchglow Travels’ team is amazing! They make my day 
+                                            everytime I have to work with them, especially with their travel deals, transparency and 
+                                            honesty, up to giving cashback to agents when there are such opportunities. I love working with them!.
+                                        </p>
+                                        <h2 class="customer_name sas">Adamu W</h2>
+                                        <p class="sas text-[16px] leading-[24px] text-left">Head of Finance</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Their responses are always quick and succinct, it makes working 
+                                            with the team quite seamless.
+                                        </p>
+                                        <h2 class="customer_name sas">Comfort U</h2>
+                                        <p class="sas text-[16px] leading-[24px] text-left sas">Trade Partner</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            The fact that I am sure of never getting stranded anywhere is one of the 
+                                            reasons why I continually choose Finchglow Travels.
+                                        </p>
+                                        <h2 class="customer_name sas">Ngozi O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            I don't bother about change in requirements as Finchglow Travels 
+                                            keeps me constantly updated and sends reminders a few days to the trip.
+                                        </p>
+                                        <h2 class="customer_name sas">Kunle O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                  
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            I am able to stay informed about happenings in the industry, especially
+                                            with constant changes in the post-Covid era due to the weekly industry updates I receive.
+                                        </p>
+                                        <h2 class="customer_name sas">Adebayo O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Finchglow Travels is swift when responding and pays
+                                            <br> 
+                                            great attention to details.
+                                        </p>
+                                        <h2 class="customer_name sas">Adeola A</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas">Trade Partner</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                  
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            During the AFCON games, Finchglow travels came through 
+                                            <br>
+                                            with the hotel and flight booking at the very last minute.
+                                        </p>
+                                        <h2 class="customer_name sas">Ayinde O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                   
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            PCR services are cheap and convenient. <br>They come to test me at home.
+                                        </p>
+                                        <h2 class="customer_name sas">Kosoko D.</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Student fares are affordable, <br>cheaper than most.
+                                        </p>
+                                        <h2 class="customer_name sas">Adanne A</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            The account managers are very helpful. <br>They answer every question.
+                                        </p>
+                                        <h2 class="customer_name sas">Ugochi P</h2>
+                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+   
+                        </div>
+                        <div class="relative bottom-0 flex  justify-center items-center w-full gap-2 max-w-[1280px] px-[15px] at500:px-[20px] my-0 mx-auto">
+                            <div class="button-next float-right p-2 ">
+                                <i class="fa-solid fa-arrow-left !text-[#697E94] hover:!text-[#0260EE] cursor-pointer"></i>
+                            </div>
+                            <div class="button-prev float-right p-2">
+                                <i class="fa-solid fa-arrow-right !text-[#697E94] hover:!text-[#0260EE] cursor-pointer"></i>
+                            </div>
+                        </div>
+
                         
-                        <div class="flex w-full xl:w-[548px] xl:h-[390px] rounded-[8px] mb-[30px] overflow-hidden">
-                            <img class="w-full h-auto" src="image/Frame 1597882141 (1).png" alt="frame">
-                        </div>
-                        
-
-                        <div class="relative w-full xl:w-[491px] float-right ">
-                            <!-- <div class="w-[140px] h-[38px] mb-[20px] ">
-                                <a href="#" >
-                                    <button class="w-full h-auto bg-[#F0FDF4] px-[24px] capitalize rounded-[8px] py-[9px] text-[#15803D] text-[16px] leading-[20px] font-normal">Learn More</button>
-                                </a>
-                            </div> -->
-                            <h2 class="text-[#166534] w-full xl:w-[491px] mb-[30px]">
-                                The Synergy of Success: Creating a Balanced 
-                            </h2>
-                            <p class="text-[20px] w-full xl:w-[491px] text-[#484848] leading-[32px] mb-[30px]">
-                                We provide the best technology solutions for our clients through our partners.
-                                In our quest to serve the world we have built our organisation on efficiency 
-                            </p>
-                            <!-- <div class="w-full sm:w-[157px] h-[52px] mb-[20px] ">
-                                <a href="#">
-                                    <button class="w-full h-auto bg-[#16A34A] px-[40px] py-[16px] rounded-[8px] capitalize text-[#FFFFFF] text-[16px] leading-[20px] font-normal">Contact Us</button>
-                                </a>
-                            </div> -->
-                        </div>
-                       
-                    </div>
-
-                </div>
-            </section>
-            <!---synergy of success-->
-            <section class="relative flex flex-col justify-center items-center w-full h-auto mb-[50px]">
-                <div class="static w-full flex flex-col justify-center items-center 2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
-                    <div class="relative w-full">
-                        <h2 class="text-[#166534] w-full sm:w-[564px] mb-[30px] !font-bold">
-                            The Synergy of Success: Creating a Balanced 
-                        </h2>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-x-5 gap-y-5 mb-[15px] w-full h-full">
-                        <div class=" w-full">
-                            <div class="bg-[#F0FDF4] rounded-t-[8px] py-[40px] px-[20px] ">
-                                <h2 class="text-[#15803D] mb-[10px]">Our Vision</h2>
-                                <p class="leading-[24px] text-[16px] text-[#676767] xl:w-[475px]">
-                                    To be the best company in Africa that is highly visible and best known for simplifying 
-                                    the way electronic exchange of information / document is done for permits, exemptions, 
-                                    licenses, etc ensuring effective supply chain providing the safest and simplest way of 
-                                    processing customs and ALL other Trade transactions in a paperless and an efficient manner.
-                                </p>
-                            </div>
-                            <div class="rounded-b-[8px] overflow-hidden">
-                                <img src="image/Group.png" alt="background">
-                            </div>
-                        </div>
-                        <div class="flex flex-col-reverse sm:flex-col w-full ">
-                            <div class="rounded-b-[8px] sm:rounded-t-[8px] overflow-hidden">
-                                <img src="image/Group.png" alt="background">
-                            </div>
-                            <div class="bg-[#F0FDF4] rounded-t-[8px] sm:rounded-b-[8px] py-[40px] px-[20px]">
-                                <h2 class="text-[#15803D] mb-[10px]">Our Mission</h2>
-                                <p class="leading-[24px] text-[16px] text-[#676767] xl:w-[475px]">
-                                    To be the best company in Africa that is highly visible and best known for simplifying 
-                                    the way electronic exchange of information / document is done for permits, exemptions, 
-                                    licenses, etc ensuring effective supply chain providing the safest and simplest way of 
-                                    processing customs and ALL other Trade transactions in a paperless and an efficient manner.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative w-full">
-                        <div class="relative bg-no-repeat bg-cover bg-center w-full py-[20px] rounded-[8px] " style="background-image:url(./image/Group.png);">
-                            <div class="py-[40px] px-[20px] lg:w-[800px]">
-                                <h2 class="text-[#FFFFFF] mb-[10px]">Our Goals</h2>
-                                <p class="leading-[24px] text-[16px] text-[#F0FDF4] ">
-                                    Provide a system and way of doing business that makes the dream of Nigeria becoming 
-                                    the continents economic and business powerhouse a reality and to make the dream of a 
-                                    paperless and transparent economy a reality
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <!--what our customer are saying-->
-            <section class="relative flex flex-col justify-center items-center w-full h-auto my-[20px]">
-                <div class="static w-full flex flex-col justify-center items-center 2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
-                    <div class="relative w-full text-center lg:w-[827px] mb-[20px]">
-                        <h2 class="text-[#166534] text-center mb-[10px] !font-bold">
-                            What Our Customers are Saying
-                        </h2>
-                        <p class="leading-[32px] text-[20px] text-center text-[#676767]">
-                            We provide the best technology solutions for our clients through our partners. 
-                            In our quest to serve the world we have built our organisation on efficiency 
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="relative flex flex-col justify-center items-center w-full h-auto my-[20px]">
-                <!---slider-->
-                <div class="relative bg-white flex justify-center  h-auto w-screen">
-
-                    <div class="slider-container swiper  xl:w-[1120px] mb-[30px]">
-                        <div class="slide-content">
-                            <div class="card-wrapper swiper-wrapper">
-    
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="name">Jasmine Chiz</span>
-                                        <p class="discription">
-                                            We provide the best technology solutions for our clients through our partners.
-                                            In our quest to serve the world we have built our organisation on efficiency 
-                                        </p>
-                                        <!-- <button class="btn">view more</button> -->
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="image/Frame 1597881943.png" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="name">Jasmine Chiz</span>
-                                        <p class="discription">
-                                            We provide the best technology solutions for our clients through our partners.
-                                            In our quest to serve the world we have built our organisation on efficiency 
-                                        </p>
-                                        <!-- <button class="btn">view more</button> -->
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="name">Jasmine Chiz</span>
-                                        <p class="discription">
-                                            We provide the best technology solutions for our clients through our partners.
-                                            In our quest to serve the world we have built our organisation on efficiency 
-                                        </p>
-                                        <!-- <button class="btn">view more</button> -->
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="name">Jasmine Chiz</span>
-                                        <p class="discription">
-                                            We provide the best technology solutions for our clients through our partners.
-                                            In our quest to serve the world we have built our organisation on efficiency 
-                                        </p>
-                                        <!-- <button class="btn">view more</button> -->
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="name">Jasmine Chiz</span>
-                                        <p class="discription">
-                                            We provide the best technology solutions for our clients through our partners.
-                                            In our quest to serve the world we have built our organisation on efficiency 
-                                        </p>
-                                        <!-- <button class="btn">view more</button> -->
-                                    </div>
-                                </div>
-
-                                <div class="card swiper-slide">
-                                    <div class="image-content">
-                                        <span class="overlay"></span>
-                                        <div class="card-image">
-                                            <img src="image/771ae4c25275856d4fef599ada898a0b.jpeg" alt="" class="card-img">
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="name">Jasmine Chiz</span>
-                                        <p class="discription">
-                                            We provide the best technology solutions for our clients through our partners.
-                                            In our quest to serve the world we have built our organisation on efficiency 
-                                        </p>
-                                        <!-- <button class="btn">view more</button> -->
-                                    </div>
-                                </div>
-    
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev !hidden sm:!block"></div>
-                        <div class="swiper-button-next !hidden sm:!block"></div>
+                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
                     
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-            <!--what our customer are saying ends-->
-            <!---Story Globally-->
-            <section class="relative flex flex-col justify-center items-center w-full h-auto my-[50px]">
-                <div class="static w-full flex justify-center items-center 2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
-                    <div class="flex flex-col lg:flex-row justify-between gap-[20px] items-center w-full h-auto">
-                        
-                        <div class="flex w-full xl:w-[548px] xl:h-[390px] rounded-[8px] mb-[30px] overflow-hidden">
-                            <img class="w-full h-full" src="image/Frame 1597882168.png" alt="frame">
-                        </div>
-                        
+                            
+                    
+                </div>  
+            </section> 
 
-                        <div class="relative w-full xl:w-[491px] float-right ">
-                            <!-- <div class="w-[140px] h-[38px] mb-[20px] ">
-                                <a href="#" >
-                                    <button class="w-full h-auto bg-[#F0FDF4] px-[24px] capitalize rounded-[8px] py-[9px] text-[#15803D] text-[16px] leading-[20px] font-normal">Learn More</button>
-                                </a>
-                            </div> -->
-                            <h2 class="text-[#166534] w-full xl:w-[491px] mb-[30px]">
-                                Propagating the MDS Story Globally
-                            </h2>
-                            <p class="text-[20px] w-full xl:w-[491px] text-[#484848] leading-[32px] mb-[30px]">
-                                We provide the best technology solutions for our clients through our partners.
-                                In our quest to serve the world we have built our organisation on efficiency 
+        </main> 
+
+        <footer id="down" class="relative flex flex-col justify-center items-center w-full h-auto " >
+            <section class="bg-[#05284C]  relative  flex flex-col justify-center items-center w-full h-auto ">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px]  pt-[70px] mb-[60px] px-[64px] my-0 mx-auto">
+                    
+                    <!-- start growing your business -->
+                    <div class="flex flex-col justify-center items-center text-center w-full">
+                        <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#FFFFFF] mb-[20px] text-[48px] sm:text-[61px] leading-[60px] sm:leading-[72px] tracking-[-2%]">Start growing your travel business now!</h2>
+                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-full flex flex-col justify-center items-center ">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] at594:w-[350px] sm:w-full">
+                                Join over 4000+ partners already trading with us and become a part of our exclusive Trade Partner group.
                             </p>
-                            <!-- <div class="w-full sm:w-[157px] h-[52px] mb-[20px] ">
-                                <a href="#">
-                                    <button class="w-full h-auto bg-[#16A34A] px-[40px] py-[16px] rounded-[8px] capitalize text-[#FFFFFF] text-[16px] leading-[20px] font-normal">Contact Us</button>
+                            <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex items-center justify-center w-[178px] h-auto "> 
+                                <a href="#" class="cdn">
+                                    Get started
                                 </a>
-                            </div> -->
+                            </div>
                         </div>
-                       
+                    </div>
+
+                    <div class="relative z-[20] flex justify-end items-end w-full ">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="relative bottom-[-78px] text-center right-0 bg-[#697E94] h-[36px] w-[158px] pt-[8px] px-[15px]">
+                            <a href="#top" class="back-to-top-box flex gap-[10px] !text-[#FFFFFF] ">Back to top
+                                <img class="back-to-top w-[20px] H-[20px]" src="image/service/icon/Frame 39920.png" alt="arrow up">
+                            </a>
+                        </span>
                     </div>
 
                 </div>
             </section>
-            <!---our Founders-->
-            <section class="relative flex flex-col justify-center items-center w-full h-auto my-[50px]">
-                <div class="static w-full flex flex-col justify-center items-center 2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
-                    <h2 class="text-[#166534] mb-[30px] w-full text-left">
-                        Meet the Founders
-                    </h2>
-                    <div class="relative w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5">
-                        <!--CEO/ FOUNDER MDM-->
-                        <div class="relative rounded-[25px] overflow-hidden ">
-                            <img class="w-full h-full" src="image/CEO FOUNDER MDM.jpeg" alt="CEO/ FOUNDER MDM">
-                            <div class="absolute bottom-0 w-full py-[200px] bigcolour"></div>
-                            <div class="absolute bottom-0 w-full px-[20px] py-[20px]">
-                                <div class="text-left ">
-                                    <h5 class="text-[#FFFFFF] text-left">
-                                        DELE MAHMOOD
-                                    </h5>
-                                    <span class="txt text-[#FFFFFF] text-left">
-                                        CEO/ FOUNDER <br> MDS
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--HEAD OF PARTNERSHIPS MDS-->
-                        <div class="relative rounded-[25px] overflow-hidden ">
-                            <img class="w-full h-full" src="image/HEAD OF PARTNERSHIPS MDS.jpeg" alt="HEAD OF PARTNERSHIPS MDS">
-                            <div class="absolute bottom-0 w-full py-[200px] bigcolour"></div>
-                            <div class="absolute bottom-0 w-full px-[20px] py-[20px]">
-                                <div class="text-left ">
-                                    <h5 class="text-[#FFFFFF] text-left">
-                                        Tsiona Chanyalew
-                                    </h5>
-                                    <span class="txt text-[#FFFFFF] text-left">
-                                        HEAD OF PARTNERSHIPS <br> MDS
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--CTO MDS-->
-                        <div class="relative rounded-[25px] overflow-hidden ">
-                            <img class="w-full h-full" src="image/CTO MDS.jpeg" alt="CTO MDS">
-                            <div class="absolute bottom-0 w-full py-[200px] bigcolour"></div>
-                            <div class="absolute bottom-0 w-full px-[20px] py-[20px]">
-                                <div class="text-left ">
-                                    <h5 class="text-[#FFFFFF] text-left">
-                                        YUSUF ORJI
-                                    </h5>
-                                    <span class="txt text-[#FFFFFF] text-left">
-                                        Cto <br> MDS
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="bg-[#F9FAFB] relative flex flex-col justify-center items-center w-full h-auto ">
-            <div class="static w-full flex justify-center items-center 2xl:w-[1200px] px-[15px] py-[10px] at500:px-[20px] md:px-[70px] my-0 mx-auto">
-                <div class="w-full relative flex flex-col justify-center items-center ">
-                    <div class="w-full flex flex-col lg:flex-row justify-between items-center mb-[30px]">
+            <!-- copy rights, products & services -->
+            <section class="bg-footer-pop relative flex flex-col justify-center items-center w-full h-auto ">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[64px] my-0 mx-auto">
+                    <div class="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
                         
-                        <div class="w-full md:w-[344px]">
-                            <span class="text-2xl cursor-pointer">
-                                <a href="index.html">
-                                    <img class="w-[60px] sm:w-[89.93px] h-auto " src="image/Meta Logo Final 1 (2).png" alt="footer logo">
+                        <div class="flex flex-col justify-between w-full md:w-[340px] md:h-[244px] gap-[42px]  at500:gap-0">
+                            <div class="text-2xl cursor-pointer w-[128.07px] h-[36.02px]">
+                                <a class="w-full" href="index.html">
+                                    <img class="w-full h-auto transition-all duration-300 ease-in-out" src="image/FT_logo_X5-01.png" alt="logo">
                                 </a>
-                            </span>
-                            <p class="text-[20px] leading-[32px] text-[#484848] mb-[10px]">
-                                We provide the best technology solutions
+                            </div>
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#506982] ">
+                                Finchglow Travels Nigeria Limited is a leading travel management company headquartered 
+                                in Nigeria with 8 offices across Lagos, Abuja, Kano and Port Harcourt.
                             </p>
-                            <span class="flex gap-5">
-                                <i class="fa-brands fa-linkedin hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
-                                <i class="fa-brands fa-x-twitter hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
-                                <i class="fa-brands fa-instagram hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
-                            </span>
-                        </div>
-
-                        <div class="flex flex-col lg:flex-row justify-between items-center w-full md:w-[394px]">
-
-                            <div class="w-full md:w-[108px] mb-[20px]">
-                                <ul>
-                                    <li>
-                                        <i class="font-bold text-[24px] leading-[32px] text-[#484848]">MDS</i>
-                                    </li>
-                                    <li>
-                                        <a href="index.html">
-                                            <i class="font-normal text-[20px] leading-[32px] text-[#484848] hover:text-[#166534]">Home</i>
+                            <div class="flex">
+                                <ul class="ipx:flex justify-center items-center gap-y-4 gap-x-8">
+                                    <!-- <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[147.15px] h-[21.23px]">
+                                        <a href="#">
+                                            <img src="image/470039d893a3fca6882eb9e119b91584.png" alt="amaseus-logo">
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">
-                                            <i class="font-normal text-[20px] leading-[32px] text-[#484848] hover:text-[#166534]">About</i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="works.html">
-                                            <i class="font-normal text-[20px] leading-[32px] text-[#484848] hover:text-[#166534]">Services</i>
+                                    </li> -->
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[182.74px] h-[60px] mix-blend-multiply">
+                                        <a href="#">
+                                            <img src="image/Accredited Agent logo.png" alt="Accredited Agent logo">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                            <!----contact Us-->
-                            <div class="w-full md:w-[183px]">
-                                <ul>
+                        </div>
+
+                        <div class="flex  justify-between md:h-[244px] w-full md:w-[320px] gap-[32px]">
+
+                            <div class="w-full md:w-[144px]">
+                                <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                                     <li>
-                                        <i class="font-bold text-[24px] leading-[32px] text-[#484848] mb-[10px]">Contact Us</i>
+                                        <a class="font-semibold font-Metropolis text-[16px] leading-[24px] text-[#0260EE]">Product</a>
                                     </li>
-                                    <li>
-                                        <span class="flex items-center cursor-pointer text-left mb-[10px]">
-                                            <i class="fa-solid fa-location-dot pr-[5px] hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
-                                            <i class="font-normal text-[20px] leading-[32px] text-[#484848]">5 Birber Street, VI</i>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <a href="tel:+2348078493303" class="flex items-center cursor-pointer text-left mb-[10px]">
-                                            <i class="fa-solid fa-phone pr-[5px] hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
-                                            <i class="font-normal text-[20px] leading-[32px] text-[#484848] hover:text-[#166534] transition-all duration-300 ease-in-out">+2348078493303</i>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="index.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Overview</a>
                                         </a>
                                     </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="about.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Features</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Solutions</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Tutorials</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Pricing</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Releases</a>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!----contact Us -->
+                            <div class="w-full md:w-[144px]">
+                                <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                                     <li>
-                                        <a href="mailto:support@mds.com" class="flex items-center text-left mb-[10px]">
-                                            <i class="fa fa-envelope pr-[5px] transition-all hover:text-[#166534] duration-300 ease-in-out"></i>
-                                            <i class="font-normal text-[20px] leading-[32px] text-[#484848]  transition-all duration-300 ease-in-out">support@mds.com</i>
+                                        <a class="font-semibold font-Metropolis text-[16px] leading-[24px] text-[#0260EE]">Services</a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="index.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Blog</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="about.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Newsletter</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Events</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Help centre</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Tutorials</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Support</a>
                                         </a>
                                     </li>
                                 </ul>
@@ -464,27 +742,37 @@
                         </div>
                     </div>
                     <!--hr line-->
-                    <hr class="h-[2px] w-full xl:w-[1025px]  bg-[#ECECEC]">
+                    <hr class="h-[2px] w-full bg-[#81B0F7]">
                     <!--copyright-->
-                    <div class="md:flex justify-between items-center w-full my-[30px]">
-                        <div class="flex w-full my-[10px]">
-                            <p class="text-[#353F50] leading-[16.8px] text-left text-[14px] font-palatino">Copyright © <script>document.write(new Date().getFullYear())</script>MDS</p>
+                    <div class="md:flex justify-between items-center w-full h-auto my-[30px] md:h-[24px]">
+                        <div class="flex w-full my-[20px]">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#353F50] leading-[16.8px] text-left text-[16px] !font-semibold">© <script>document.write(new Date().getFullYear())</script> Finchglow Travels. All rights reserved</p>
                         </div>
                         <div>
-                            <ul class="flex gap-8">
+                            <ul data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex gap-4">
                                 <li>
                                     <a href="">
-                                        <i class="text-[14px] font-normal text-right leading-[18.9px] capitalize font-garamond">Privacy</i>
+                                        <i class="fa-brands fa-instagram hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <i class="text-[14px] font-normal text-right leading-[18.9px] capitalize font-garamond">Legal</i>
+                                        <i class="fa-brands fa-x-twitter hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <i class="text-[14px] font-normal text-right leading-[18.9px] capitalize font-garamond">Feedback</i>
+                                        <i class="fa-brands fa-facebook hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-youtube hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -493,13 +781,21 @@
                     </div>
                     
                 </div>
-            </div>
+            </section>
+
         </footer>
 
     </div>
-    <!-- swiper js -->
-    <script src="swiper-bundle.min.js"></script>
-    <!-- swiper js -->
-    <script src="index.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> -->
 </body>
 </html>

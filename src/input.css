@@ -22,6 +22,11 @@ img{
     width: 100%;
     height: auto;
 }
+.back-to-top-box:hover .back-to-top{
+    position: relative;
+    top: -5px;
+}
+
 
 /* icons styles */
 .fa-solid{
@@ -164,7 +169,8 @@ header.scrolled ul.cass li button{
     
 }
 .bigcolour{
-    background: linear-gradient(630.45deg, #E6EFFD 8.38%, #FFFFFF 97.69%),linear-gradient(-356deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),linear-gradient(219.35deg, #FFE0E1 43.98%, #FFFFFF -3.48%);
+    background: linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%);
+
 
 }
 
@@ -689,7 +695,7 @@ span.next-btn:hover, span.prev-btn:hover{
 
 /* button fot tab control */
 .tab-btn.active{
-    border-left: 4px solid #ED3237;
+    border-left: 4px solid #0260EE;
     transition: all 5s ease;
 }
 
@@ -721,7 +727,6 @@ display: none !important;
 } */
 .testimonial-content{
     align-items: center !important;
-    gap: 78px;
     height: auto !important;
     
 } 
@@ -758,7 +763,9 @@ display: none !important;
     text-align: center;
 }
 
-
+.sas{
+    color: #05284C !important;
+}
 /* .swiper-pagination {
     position: relative;
     bottom: -19px !important;
@@ -780,4 +787,23 @@ display: none !important;
 }
 
 
+
+/* service page */
+
+.custom-list ul {
+    list-style-type: disc; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+.custom-list li {
+    position: relative ;
+    padding-left: 1.5em; /* Space for custom bullet */
+}
+.custom-list li::before {
+    content: '•'; /* Custom bullet character */
+    color: #697E94; /* Bullet color */
+    font-size: 30px; /* Bullet size */
+    position: absolute;
+    left: 0;
+    top: 0.1em; /* Adjust as needed */
+}
 

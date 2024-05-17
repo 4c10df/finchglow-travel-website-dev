@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>finchglo travels</title>
-    <link rel="shortcut icon" href="image/Meta Logo Final 1.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +11,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body class="cursor-auto z-50 bg-black">
     <div class="relative flex flex-col justify-center items-center w-full bg-black">
-        <header id="navbar" class="fixed left-0 top-0 w-full py-0 mb-[50px] z-[9999] transition-all duration-300 ease-in-out ">
+        <header id="navbar" class="fixed flex pt-[46px] pb-[26px]  h-[114px] left-0 top-0 w-full z-[9999] transition-all duration-300 ease-in-out ">
             <div class="static w-full silver:flex justify-center items-center  2xl:w-[1280px] px-[15px] py-[10px] at500:px-[40px] my-0 mx-auto">
     
                 <nav class="h-auto flex md:items-center silver:justify-between w-full px-[15px] sm:px-0">
@@ -43,14 +44,14 @@
                     <!-- drop-menu list -->
                     <div class="px-2">
                         <ul id="open1" class="cass flex flex-col silver:flex-row justify-center items-center z-[888] silver:z-auto float-left rounded-[8px] 
-                            silver:static  absolute bg-[#000000b0]  w-full left-0  top-[-555px] transition-all ease-in duration-500 ">
+                            silver:static  absolute bg-[#F1F5FC]  w-full left-0  top-[-555px] transition-all ease-in duration-500 ">
                         
                 
                             <li class="silver:mr-4 my-6 silver:my-0">
                                 <a class="inline-block py-2 w-[55px] text-[12px] font-bold border-solid border-[#81B0F7]  border-b-[4px] transition-all duration-300 ease-in-out " href="about.html">About Us</a>
                             </li>
                             <li class="silver:mr-4 my-6 silver:my-0 ">
-                                <a class="py-2  text-[12px] font-bold border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="#">
+                                <a class="py-2  text-[12px] font-bold border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="service.html">
                                     Services
                                 </a>
                             </li>
@@ -81,16 +82,16 @@
                     </div>
                     <!-- drop-menu list -->
                 
-                    <div class="flex items-center justify-end w-[65px] h-auto ">
+                    <!-- <div class="flex items-center justify-end w-[65px] h-auto ">
                         <a href="contact.html">
                             <button class="!text-[12px] !text-[#FFFFFF] !bg-[#05284C] !px-[12px] !border-none">Login</button>
                         </a>
-                    </div> 
+                    </div>  -->
                 </nav>
 
             </div>
         </header>
-        <section class="wrap">
+        <section id="top" class="wrap">
             <div class="home">
                 <img class="img-slide active transition-all ease-in-out duration-500" src="image/background-img.jpeg" >
                 <img class="img-slide transition-all ease-in-out duration-500" src="image/20191101-Dawn-over-the-Dolomites.jpg">
@@ -216,33 +217,33 @@
         </section><!--container-->
 
         <main class="w-full flex flex-col justify-center items-center">
-            <section class="relative bg-white flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center py-[70px] w-full overflow-hidden" style="background-image:url(./image/circle.png);">
+            <section class="relative bg-white flex flex-col justify-center items-center bg-fixed bg-no-repeat bg-cover bg-center py-[70px] w-full overflow-hidden" style="background-image:url(./image/circle.png);">
                 <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[30px] at500:px-[80px]  my-0 mx-auto">
                     <div class="flex flex-col lg:flex-row justify-between items-center w-full">
 
                         <div class="relative flex flex-col justify-start items-start gap-[6px] w-full h-auto text-left ">
-                            <span class="txt2 text-[#3580F1]">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#3580F1]">
                                 Where we are
                             </span>
-                            <h3 class="text-[#05284C] silver:w-[388px]">
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#05284C] silver:w-[388px]">
                                 Providing Seamless Travel Experiences For Every Client
                             </h3>
                         </div>
 
                         <div class="relative flex flex-col justify-center items-start gap-[40px] w-full h-auto text-left mb-[30px]">
                            <div class="relative flex flex-col justify-center items-start gap-[20px] w-full  h-auto text-left">
-                                <span class="txt2 text-[#697E94] lg:w-[541px]">
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#697E94] lg:w-[541px]">
                                     Finchglow Travels is Nigeria’s foremost travel consolidator. Established in 2006, we have grown from a lone travel 
                                     agency to becoming a trusted business partner for travel agencies, corporate organisations, and individual travellers 
                                     across Nigeria
                                 </span>
-                                <span class="txt3 !text-[#697E94] lg:w-[541px]">
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 !text-[#697E94] lg:w-[541px]">
                                     Over the last 18 years, we have consistently delivered innovative travel solutions and unequalled customer service to our 
                                     clients, maintaining an annual turnover of over 30 billion NGN. Driven by our culture of customer-centricity, we currently 
                                     have nine offices across Lagos, Abuja, Port Harcourt, and Kano.
                                 </span>
                            </div>
-                            <a href="#" class="btn !text-[#0260EE] ">Contact us
+                            <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn !text-[#0260EE] ">Contact us
                                 <img class="w-[11px]" src="image/arrow-up.png" alt="arrow up">
                             </a>
                         </div>
@@ -270,113 +271,112 @@
                                
                                 <div id="slider1" class="card bg-[#FFFFFF] border-b-[#0143A7] border-b-[7px] px-[20px]  swiper-slide">
                                     <div class="image-content">
-                                        <div class="card-image">
+                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="card-image">
                                             <img src="image/Vector 3.png" alt="flight icon" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
-                                        <span class="name">Trade Partner Plus</span>
-                                        <p class="discription !font-medium">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="name">Trade Partner Plus</span>
+                                        <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="discription !font-medium">
                                             Enjoy a boost in your revenue while offering your clients unbeatable
                                              deals and discounts that will make them choose you over your competitors. 
                                         </p>
                                         <!-- < class="btn">view more</button> -->
-                                        <a href="#" class="btn hover:!text-[#3580F1]">Read more
+                                        <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn hover:!text-[#3580F1]">Read more
                                             <i class="fa-solid fa-arrow-right !text-[#3580F1] hover:!text-[#3580F1]"></i>
                                         </a>
                                     </div>
                                 </div> 
                                 <div id="slider2" class="card bg-[#E1EFFD] border-b-[#3580F1] border-b-[7px]  px-[20px] pt-[40px] swiper-slide">
                                     <div class="image-content">
-                                        <div class="card-image">
+                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="card-image">
                                             <img src="image/Vector 3.png" alt="flight icon" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
-                                        <span class="name">Corporate Travel Management</span>
-                                        <p class="discription !font-medium">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="name">Corporate Travel Management</span>
+                                        <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="discription !font-medium">
                                             Why choose between ‘quality service’ or ‘cost-effectiveness’ when you can have both? With 
                                             our personalised service, you can expect seamless travel arrangements with dedicated support 
                                             at every turn.
                                         </p>
                                         <!-- < class="btn">view more</button> -->
-                                        <a href="#" class="btn">Read more
+                                        <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn">Read more
                                             <i class="fa-solid fa-arrow-right !text-[#3580F1] hover:!text-[#3580F1]"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div id="slider3" class="card bg-[#CEE3F8] border-b-[#81B0F7] border-b-[7px] px-[20px] pt-[0px] swiper-slide">
                                     <div class="image-content">
-                                        <div class="card-image !bg-[#E6EFFD]">
+                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="card-image !bg-[#E6EFFD]">
                                             <img src="image/Vector 3.png" alt="flight icon" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
-                                        <span class="name">Leisure Travel</span>
-                                        <p class="discription !font-medium">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="name">Leisure Travel</span>
+                                        <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="discription !font-medium">
                                             We understand your busy schedule and know that planning your travel can add to the stress. Let our team 
                                             of travel experts provide hassle-free travel arrangements so you can travel in style, comfort, and within 
                                             your budget. 
                                         </p>
                                         <!-- < class="btn">view more</button> -->
-                                        <a href="#" class="btn">Read more
+                                        <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn">Read more
                                             <i class="fa-solid fa-arrow-right !text-[#3580F1] hover:!text-[#3580F1]"></i>
                                         </a>
                                     </div>
                                 </div>  
                                 <div id="slider1" class="card bg-[#FFFFFF] border-b-[#0143A7] border-b-[7px] px-[20px] pt-[20px] swiper-slide">
                                     <div class="image-content">
-                                        <div class="card-image">
+                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="card-image">
                                             <img src="image/Vector 3.png" alt="flight icon" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
-                                        <span class="name">Trade Partner Plus</span>
-                                        <p class="discription !font-medium">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="name">Trade Partner Plus</span>
+                                        <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="discription !font-medium">
                                             Enjoy a boost in your revenue while offering your clients unbeatable
                                              deals and discounts that will make them choose you over your competitors. 
                                         </p>
                                         <!-- < class="btn">view more</button> -->
-                                        <a href="#" class="btn hover:!text-[#3580F1]">Read more
+                                        <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn hover:!text-[#3580F1]">Read more
                                             <i class="fa-solid fa-arrow-right !text-[#3580F1] hover:!text-[#3580F1]"></i>
                                         </a>
                                     </div>
                                 </div>                             
                                 <div id="slider4" class="card bg-[#C1D8EE] border-b-[#9ABFF8] border-b-[7px] px-[20px] pt-[20px] swiper-slide">
                                     <div class="image-content">
-                                        <div class="card-image">
+                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="card-image">
                                             <img src="image/Vector 3.png" alt="flight icon" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
-                                        <span class="name">Ancillary Services</span>
-                                        <p class="discription !font-medium">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="name">Ancillary Services</span>
+                                        <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="discription !font-medium">
                                             Our ancillary services come with a personalised touch designed to cater to the nitty-gritty of your trip. From 
                                             airport transfers to travel insurance, we'll expertly coordinate everything while you focus on creating lasting memories. 
                                         </p>
                                         <!-- < class="btn">view more</button> -->
-                                        <a href="#" class="btn">Read more
+                                        <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn">Read more
                                             <i class="fa-solid fa-arrow-right !text-[#3580F1] hover:!text-[#3580F1]"></i>
                                         </a>
                                     </div>
                                 </div>
                                 <div id="slider2" class="card bg-[#E1EFFD] border-b-[#3580F1] border-b-[7px]  px-[20px] pt-[10px] swiper-slide">
                                     <div class="image-content">
-                                        <div class="card-image">
+                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="card-image">
                                             <img src="image/Vector 3.png" alt="flight icon" class="card-img">
                                         </div>
                                     </div>
                                     <div class="card-content">
-                                        <span class="name">Corporate Travel Management</span>
-                                        <p class="discription !font-medium">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="name">Corporate Travel Management</span>
+                                        <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="discription !font-medium">
                                             Why choose between ‘quality service’ or ‘cost-effectiveness’ when you can have both? With 
                                             our personalised service, you can expect seamless travel arrangements with dedicated support 
                                             at every turn.
                                         </p>
-                                        <!-- < class="btn">view more</button> -->
-                                        <!-- <a href="#" class="btn">Read more
+                                        <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn">Read more
                                             <i class="fa-solid fa-arrow-right !text-[#3580F1] hover:!text-[#3580F1]"></i>
-                                        </a> -->
+                                        </a>
                                     </div>
                                 </div>              
       
@@ -403,44 +403,46 @@
             <section class="relative bg-[#03182E] flex justify-center flex-col items-center w-full h-auto">
                 <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[50px] at500:pl-[55px] at500:pr-[40px] my-0 mx-auto">
                     <div class="flex flex-col lg:flex-row justify-between items-center w-full gap-[30px] ">
+
                         <div class="relative flex flex-col items-start w-full ">
-                            <span class="txt2 text-[#0260EE] capitalize mb-[10px]">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#0260EE] capitalize mb-[10px]">
                                 Key Achievements
                             </span>
-                            <h3 class="text-[#FFFFFF] lg:w-[402px] mb-[10px]">
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#FFFFFF] lg:w-[402px] mb-[10px]">
                                 After over 18 years connecting our clients with the rest of the world, 
                                 we’ve perfected the art of providing exceptional service and travel experiences.
                             </h3>
-                            <p class="leading-[24px] text-[16px] text-[#9ABFF8] lg:w-[402px] mb-[20px]">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="leading-[24px] text-[16px] text-[#9ABFF8] lg:w-[402px] mb-[20px]">
                                 Since we launched in June 2006, we have expanded from one branch to nine branches across Nigeria, 
                                 won over 20 industry awards, and serviced over 20,000 clients. We are dedicated to offering the best 
                                 possible service across all our touch points.
                             </p>
-                            <a href="#" class="btn !text-[#0260EE] ">Learn more
+                            <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn !text-[#0260EE] ">Learn more
                                 <img class="w-[11px]" src="image/arrow-up.png" alt="arrow up">
                             </a>
                         </div>
+
                         <!-- count up -->
                         <div class="grid at594:grid-cols-2 gap-y-[100px] gap-x-[32px] w-full">
                             
                             <div class="flex flex-col justify-center items-start w-full">
-                                <div id="counter" class="counter" data-target="30" data-unit="+ Billion">0+</div>
-                                <span class="txt3 capitalize">Naira Annual Turnover</span>
+                                <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" id="counter" class="counter" data-target="30" data-unit="+ Billion">0+</div>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 capitalize">Naira Annual Turnover</span>
                             </div>
 
                             <div class="flex flex-col justify-center items-start w-full">
-                                <div id="counter" class="counter" data-target="100,000" data-unit="K+">0K+</div>
-                                <span class="txt3 capitalize">Trips booked</span>
+                                <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" id="counter" class="counter" data-target="100,000" data-unit="K+">0K+</div>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 capitalize">Trips booked</span>
                             </div>
 
                             <div class="flex flex-col justify-center items-start w-full">
-                                <div id="counter" class="counter" data-target="200" data-unit="+">0+</div>
-                                <span class="txt3 capitalize">Travel Consultants</span>
+                                <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" id="counter" class="counter" data-target="200" data-unit="+">0+</div>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 capitalize">Travel Consultants</span>
                             </div>
 
                             <div class="flex flex-col justify-center items-start w-full">
-                                <div id="counter" class="counter" data-target="20,000" data-unit="+">0+</div>
-                                <span class="txt3 capitalize">Happy clients</span>
+                                <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" id="counter" class="counter" data-target="20,000" data-unit="+">0+</div>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 capitalize">Happy clients</span>
                             </div>
                                 
                         </div>
@@ -453,13 +455,13 @@
             <section class="relative bigcolour flex justify-center flex-col items-center w-full h-auto overflow-hidden">
                 <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px] at500:px-[55px] xl:pr-0  2xl:px-[20px] my-0 mx-auto">
                     <div class="relative flex flex-col justify-center items-start gap-[30px] w-full text-left mb-[30px]">
-                        <span class="txt2 text-[#3580F1] ">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#3580F1] ">
                             Our Product
                         </span>
-                        <h3 class="text-[#05284C] lg:w-[689px]">
+                        <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#05284C] lg:w-[689px]">
                             Customise your Customer Experience
                         </h3>
-                        <span class="txt3 lg:w-[768px] !text-[#375370]">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 lg:w-[768px] !text-[#375370]">
                             With our brand new SAAS platform, we are putting the power in your hands! Book flights 
                             directly, manage your business wallet, get business reports at the tap of a button, and much more
                         </span>
@@ -471,40 +473,40 @@
 
                             <div class="tab-btn active  border-l-[#0260EE] border-l-[4px] p-4 text-left flex flex-col justify-center items-start w-full xl:w-[350px] gap-[15px]  cursor-pointer">
                                 
-                                <h5 class="!leading-[32px] text-[#05284C]">
+                                <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="!leading-[32px] text-[#05284C]">
                                     Book Flights and Hotel Tickets
                                 </h5>
-                                <span class="txt2 text-[#506982]">
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#506982]">
                                     You can book flights and hotels in few clicks. Manage your booking, 
                                     Issue tickets and Generate invoice for your customers.
                                 </span>
-                                <a href="#" class="btn hover:!text-[#0260EE]">Learn more
+                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn hover:!text-[#0260EE]">Learn more
                                     <i class="fa-solid fa-arrow-right !text-[#0260EE] hover:!text-[#b1b7c0]"></i>
                                 </a>
                                 
                             </div>
 
-                            <div class="tab-btn  border-l-[#0260EE] border-l-[4px] p-4 text-left flex flex-col justify-center items-start gap-[15px] w-full xl:w-[350px]  cursor-pointer">
+                            <div class="tab-btn  border-l-[#9ABFF8] border-l-[4px] p-4 text-left flex flex-col justify-center items-start gap-[15px] w-full xl:w-[350px]  cursor-pointer">
                                 
-                                <h5 class="!leading-[32px] text-[#05284C]">Work with your team seamlessly </h5>
-                                <span class="txt2 text-[#506982]">
+                                <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="!leading-[32px] text-[#05284C]">Work with your team seamlessly </h5>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#506982]">
                                     An all-in-one platform that helps you manage your team operation. 
                                     Assign roles and permissions to members of your team.
                                 </span>
-                                <a href="#" class="btn hover:!text-[#0260EE]">Learn more
+                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn hover:!text-[#0260EE]">Learn more
                                     <i class="fa-solid fa-arrow-right !text-[#0260EE] hover:!text-[#b1b7c0]"></i>
                                 </a>
                                 
                             </div>
 
-                            <div class="tab-btn  border-l-[#0260EE] border-l-[4px] p-4 text-left flex flex-col justify-center items-start gap-[15px] w-full xl:w-[350px]  cursor-pointer">
+                            <div class="tab-btn  border-l-[#CCDFFC] border-l-[4px] p-4 text-left flex flex-col justify-center items-start gap-[15px] w-full xl:w-[350px]  cursor-pointer">
                                 
-                                <h5 class="!leading-[32px] text-[#05284C]">Manage your team with reports</h5>
-                                <span class="txt2 text-[#506982]">
+                                <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="!leading-[32px] text-[#05284C]">Manage your team with reports</h5>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#506982]">
                                     Measure what matters with our trade partner portal. Easy-to-use reports. You can filter, export, and 
                                     drilldown on the data in a couple clicks.
                                 </span>
-                                <a href="#" class="btn hover:!text-[#0260EE]">Learn more
+                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn hover:!text-[#0260EE]">Learn more
                                     <i class="fa-solid fa-arrow-right !text-[#0260EE] hover:!text-[#b1b7c0]"></i>
                                 </a>
                                 
@@ -673,17 +675,17 @@
                     <div class="relative flex flex-col lg:flex-row justify-between items-center w-full">
 
                         <div class="relative flex flex-col justify-center items-start gap-[30px] w-full xl:w-[404px] h-auto text-left mb-[30px]">
-                            <span class="txt2 text-[#3580F1]">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#3580F1]">
                                 Where we are
                             </span>
-                            <h3 class="text-[#05284C] xl:w-[390px]">
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#05284C] xl:w-[390px]">
                                 We are strategically positioned to serve your business needs
                             </h3>
-                            <span class="txt3 !text-[#375370] xl:w-[367px]">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 !text-[#375370] xl:w-[367px]">
                                 We have a strong presence in four states across Nigeria, with nine offices 
                                 in key locations in Lagos, Port Harcourt, Kano and Abuja.
                             </span>
-                            <a href="#" class="btn !text-[#0260EE] ">Contact us
+                            <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn !text-[#0260EE] ">Contact us
                                 <img class="w-[11px]" src="image/arrow-up.png" alt="arrow up">
                             </a>
                         </div>
@@ -706,21 +708,21 @@
                 <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px] at500:pl-[55px] at500:pr-0 2xl:px-[55px] my-0 mx-auto">
 
                     <div class="relative flex flex-col justify-start items-start w-full text-left mb-[30px] gap-[12px]">
-                        <span class="txt2 text-[#0260EE]">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#0260EE]">
                             Our blog
                         </span>
-                        <h3 class="text-[#101828] lg:w-[689px] capitalize">
+                        <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] lg:w-[689px] capitalize">
                             Latest Blog Posts
                         </h3>
                         <div class="flex flex-col lg:flex-row justify-between items-start w-full md:w-[1012px]">
-                            <span class="txt3 !text-[#667085] lg:w-[818px]">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt3 !text-[#667085] lg:w-[818px]">
                                 Embark on a journey through our blog posts, where we unveil travel secrets and expose 
                                 you to a treasure trove of travel tales and insider tips. We also cover business gems, 
                                 innovative ideas to scale your travel agency and best operational tips for travel agents 
                                 and agencies.
                             </span>
                             <div class="flex items-center justify-end w-[135px] h-auto">
-                                <a class="rob" href="contact.html">
+                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="rob" href="contact.html">
                                     Go to blog
                                 </a>
                             </div>
@@ -739,16 +741,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 How to effectively price for your tickets
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             How do you create compelling presentations that wow your colleagues...
                                         </span>
                                         <!-- <button class="btn">view more</button> -->
@@ -762,16 +764,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Industry Insight</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Industry Insight</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 Migrating to automated platform for bookings
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             Linear helps streamline software projects, 
                                             sprints, tasks, and bug tracking. Here’s how to get started.
                                         </span>
@@ -786,16 +788,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 Building your API Stack
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             The rise of RESTful APIs has been met by 
                                             a rise in tools for creating, testing, and managing them.
                                         </span>
@@ -810,16 +812,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 How to effectively price for your tickets
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             How do you create compelling presentations that wow your colleagues...
                                         </span>
                                         <!-- <button class="btn">view more</button> -->
@@ -833,16 +835,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Industry Insight</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Industry Insight</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 Migrating to automated platform for bookings
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             Linear helps streamline software projects, 
                                             sprints, tasks, and bug tracking. Here’s how to get started.
                                         </span>
@@ -857,16 +859,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 Building your API Stack
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             The rise of RESTful APIs has been met by 
                                             a rise in tools for creating, testing, and managing them.
                                         </span>
@@ -881,16 +883,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 How to effectively price for your tickets
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             How do you create compelling presentations that wow your colleagues...
                                         </span>
                                         <!-- <button class="btn">view more</button> -->
@@ -904,16 +906,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Industry Insight</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Industry Insight</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 Migrating to automated platform for bookings
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             Linear helps streamline software projects, 
                                             sprints, tasks, and bug tracking. Here’s how to get started.
                                         </span>
@@ -928,16 +930,16 @@
                                     </div>
                                
                                     <div class="flex flex-col justify-start items-start w-full gap-[20px] p-[30px]">
-                                        <span class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">Blog</span>
                                         <div class="flex justify-between items-center w-full gap-[4px] hover:gap-[12px]">
-                                            <h5 class="text-[#101828] !leading-[30px] w-[268px]">
+                                            <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] w-[268px]">
                                                 Building your API Stack
                                             </h5>
-                                           <div class="relative w-[24px] h-[28px]  cursor-pointer">
+                                           <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
                                             <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
                                            </div>
                                         </div>
-                                        <span class="txt5 text-[#667085]">
+                                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
                                             The rise of RESTful APIs has been met by 
                                             a rise in tools for creating, testing, and managing them.
                                         </span>
@@ -965,22 +967,18 @@
             </section>
 
             <!-- testimonial -->
-            <section class="relative bg-[#03182E] flex justify-center flex-col items-center w-full h-[412px]">
-                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] pt-[70px] pb-[70px] at500:px-[55px] my-0 mx-auto">
+            <section class="relative bg-[#03182E] flex justify-center flex-col items-center w-full h-auto silver:h-[412px]">
+                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[50px]  at500:px-[55px] my-0 mx-auto">
                 
                     <div class="testimonial-container swiper">
 
-                        <div class="testimonial-content swiper-wrapper">
+                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="testimonial-content swiper-wrapper">
 
                             
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full ">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                    
                                     
                                     <div class="flex flex-col justify-center items-center w-full ">
                                         <span class="rating">
@@ -1003,11 +1001,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                    
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1032,11 +1026,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                 
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1059,11 +1049,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                  
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1087,11 +1073,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                    
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1115,11 +1097,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                    
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1142,11 +1120,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                  
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1169,11 +1143,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                   
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1196,11 +1166,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                  
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1223,11 +1189,6 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1251,11 +1212,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                    
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1279,11 +1236,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                    
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1305,11 +1258,7 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
-                                    <!-- <div class="w-full mb-[20px]">
-                                        <div class="testimonial-image w-full lg:h-[578px] lg:w-[582px]">
-                                            <img src="image/oliva rhye.png" class="test_img" alt="">
-                                        </div>
-                                    </div> -->
+                                  
                                     
                                     <div class="flex flex-col justify-center items-center w-full">
                                         <span class="rating">
@@ -1381,9 +1330,9 @@
 
                         <div class="flex flex-col justify-start items-start w-full md:w-[398.22px] gap-[40px]">
                             <div class="flex flex-col justify-start items-start gap-[18px]">
-                                <span class="txt4 leading-[24px] text-[#0260EE]">Support</span>
-                                <h3 class="text-[#101828]">FAQs</h3>
-                                <span class="txt4 leading-[20px] text-[#667085]">
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 leading-[24px] text-[#0260EE]">Support</span>
+                                <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828]">FAQs</h3>
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 leading-[20px] text-[#667085]">
                                     Everything you need to know about our services. Can’t find the answer 
                                     you’re looking for? Please <strong class="txt4 text-[#0260EE] hover:text-[#101828]"><a href="#">chat with our team.</a></strong>
                                 </span>
@@ -1399,7 +1348,7 @@
                             <div class="bg-color bg-[#E6EFFD] flex flex-col justify-between rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-linear mb-[8px]">
 
                                 <div class="flex">
-                                    <span class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
+                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
                                         What is the difference between Trade PartnerPlus and PartnerPlus Connect?
                                     </span>
                                     <div class="flex flex-col justify-end items-end relative cursor-pointer h-[21.33px] w-[43.33px]">
@@ -1409,7 +1358,7 @@
                                 </div>
 
                                 <div class=" drop-down transition-all duration-300 ease-linear">
-                                    <p class="text-[16px] leading-[24px] text-[#667085] ">
+                                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#667085] ">
                                         Trade PartnerPlus is our affiliate programme for travel agents while PartnerPlus 
                                         Connect is a webinar series for travel agents
                                     </p>
@@ -1422,7 +1371,7 @@
                             <div class="bg-color hover:bg-[#E6EFFD] flex flex-col justify-between rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-linear mb-[8px]">
 
                                 <div class="flex">
-                                    <span class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
+                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
                                         How competitive are your fares?
                                     </span>
                                     <div class="flex flex-col justify-end items-end relative cursor-pointer h-[21.33px] w-[43.33px]">
@@ -1432,7 +1381,7 @@
                                 </div>
                             
                                 <div class="drop-down hidden transition-all duration-300 ease-linear">
-                                    <p class="text-[16px] leading-[24px] text-[#667085]">
+                                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#667085]">
                                         Trade PartnerPlus is our affiliate programme for travel agents while PartnerPlus 
                                         Connect is a webinar series for travel agents
                                     </p>
@@ -1443,7 +1392,7 @@
                             <div class="bg-color hover:bg-[#E6EFFD] flex flex-col justify-between rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-linear mb-[8px]">
                             
                                 <div class="flex">
-                                    <span class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
+                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
                                         Do you provide 24/7 service?
                                     </span>
                                     <div class="flex flex-col justify-end items-end relative cursor-pointer h-[21.33px] w-[43.33px]">
@@ -1453,7 +1402,7 @@
                                 </div>
                             
                                 <div class="drop-down hidden transition-all duration-300 ease-linear">
-                                    <p class="text-[16px] leading-[24px] text-[#667085]">
+                                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#667085]">
                                         Trade PartnerPlus is our affiliate programme for travel agents while PartnerPlus 
                                         Connect is a webinar series for travel agents
                                     </p>
@@ -1464,7 +1413,7 @@
                             <div class="bg-color hover:bg-[#E6EFFD] flex flex-col justify-between rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-linear mb-[8px]">
                             
                                 <div class="flex">
-                                    <span class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
+                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
                                         Do you provide other travel services besides flight tickets?
                                     </span>
                                     <div class="flex flex-col justify-end items-end relative cursor-pointer h-[21.33px] w-[43.33px]">
@@ -1474,7 +1423,7 @@
                                 </div>
                             
                                 <div class="drop-down hidden transition-all duration-300 ease-linear">
-                                    <p class="text-[16px] leading-[24px] text-[#667085]">
+                                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#667085]">
                                         Trade PartnerPlus is our affiliate programme for travel agents while PartnerPlus 
                                         Connect is a webinar series for travel agents
                                     </p>
@@ -1485,7 +1434,7 @@
                             <div class="bg-color hover:bg-[#E6EFFD] flex flex-col justify-between rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-linear mb-[8px]">
                             
                                 <div class="flex">
-                                    <span class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
+                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
                                         Do you have relationships with Airlines (international and local)?
                                     </span>
                                     <div class="flex flex-col justify-end items-end relative cursor-pointer h-[21.33px] w-[43.33px]">
@@ -1495,7 +1444,7 @@
                                 </div>
                             
                                 <div class="drop-down hidden transition-all duration-300 ease-linear">
-                                    <p class="text-[16px] leading-[24px] text-[#667085]">
+                                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#667085]">
                                         Trade PartnerPlus is our affiliate programme for travel agents while PartnerPlus 
                                         Connect is a webinar series for travel agents
                                     </p>
@@ -1506,7 +1455,7 @@
                             <div class="bg-color hover:bg-[#E6EFFD] flex flex-col justify-between rounded-[14.22px] p-[28.44px] gap-[6px] h-auto w-full transition-all duration-300 ease-linear mb-[8px]">
                             
                                 <div class="flex">
-                                    <span class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
+                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex flex-col justify-start w-full items-start txt-4 leading-[24px] text-[#101828]">
                                         Do you provide Visa Assistance Services?
                                     </span>
                                     <div class="flex flex-col justify-end items-end relative cursor-pointer h-[21.33px] w-[43.33px]">
@@ -1516,7 +1465,7 @@
                                 </div>
                             
                                 <div class="drop-down hidden transition-all duration-300 ease-linear">
-                                    <p class="text-[16px] leading-[24px] text-[#667085]">
+                                    <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#667085]">
                                         Trade PartnerPlus is our affiliate programme for travel agents while PartnerPlus 
                                         Connect is a webinar series for travel agents
                                     </p>
@@ -1542,7 +1491,7 @@
 
                     <div class="our_partners-container  swiper w-full">
 
-                        <div class=" !h-[80px] w-full lg:!w-[1088px] mb-[30px] swiper-wrapper ">
+                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" !h-[80px] w-full lg:!w-[1088px] mb-[30px] swiper-wrapper ">
 
                             
             
@@ -1620,7 +1569,7 @@
 
         </main> 
 
-        <footer id="down" class="relative flex flex-col justify-center items-center w-full h-auto " >
+        <!-- <footer id="down" class="relative flex flex-col justify-center items-center w-full h-auto " >
             <!-- sign-up -->
            <!----<section class="relative bg-[#05284C] md:!bg-white  flex flex-col justify-center items-center w-full h-[90px]">
                 <div class="static  w-full flex flex-col justify-center  max-w-[1280px] px-[30px] my-0 mx-auto">
@@ -1671,16 +1620,23 @@
                             
                     </div>
                 </div>
-            </section>-->
+            </section>--
             <section class="bg-[#05284C]  relative  flex flex-col justify-center items-center w-full h-auto ">
                 <div class="static  w-full flex flex-col justify-center  2xl:w-[1280px]  pt-[70px] mb-[60px] px-[55px] my-0 mx-auto">
                     
-                    <!-- start growing your business -->
+                    <!-- start growing your business --
                     <div class="flex flex-col justify-center items-center text-center">
-                        <h2 class="text-[#FFFFFF] mb-[20px] text-[48px] sm:text-[72px] leading-[60px] sm:leading-[90px] tracking-[-2%]">Start growing your business</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" 
+                            class="text-[#FFFFFF] mb-[20px] text-[48px] sm:text-[72px] leading-[60px] sm:leading-[90px] tracking-[-2%]">
+                            Start growing your business
+                        </h2>
                         <div class="relative w-full flex flex-col justify-center items-center mb">
-                            <p class="text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] at594:w-[350px] sm:w-full">Join over 4,000+ Trade Partners already trading with us.</p>
-                            <div class="flex items-center justify-center w-[178px] h-auto "> 
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" 
+                                class="text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] at594:w-[350px] sm:w-full">
+                                Join over 4,000+ Trade Partners already trading with us.
+                            </p>
+                            <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" 
+                                class="flex items-center justify-center w-[178px] h-auto "> 
                                 <a href="#" class="cdn">
                                     Get started
                                 </a>
@@ -1690,7 +1646,7 @@
 
                 </div>
             </section>
-            <!-- copy rights, products & services -->
+            <!-- copy rights, products & services --
             <section class="bg-footer-pop relative flex flex-col justify-center items-center w-full h-auto ">
                 <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[55px] my-0 mx-auto">
                     <div class="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
@@ -1707,12 +1663,12 @@
                             </p>
                             <div class="flex">
                                 <ul class="ipx:flex justify-center items-center gap-y-4 gap-x-8">
-                                    <li class=" w-[147.15px] h-[21.23px]">
+                                    <!-- <li class=" w-[147.15px] h-[21.23px]">
                                         <a href="#">
                                             <img src="image/470039d893a3fca6882eb9e119b91584.png" alt="amaseus-logo">
                                         </a>
-                                    </li>
-                                    <li class=" w-[100.5px] h-[33px] mix-blend-multiply">
+                                    </li> --
+                                    <li class=" w-[182.74px] h-[60px] mix-blend-multiply">
                                         <a href="#">
                                             <img src="image/Accredited Agent logo.png" alt="Accredited Agent logo">
                                         </a>
@@ -1760,7 +1716,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!----contact Us -->
+                            <!----contact Us --
                             <div class="w-full md:w-[144px]">
                                 <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
                                     <li>
@@ -1800,9 +1756,9 @@
                             </div>
                         </div>
                     </div>
-                    <!--hr line-->
+                    <!--hr line--
                     <hr class="h-[2px] w-full bg-[#81B0F7]">
-                    <!--copyright-->
+                    <!--copyright--
                     <div class="md:flex justify-between items-center w-full h-auto my-[30px] md:h-[24px]">
                         <div class="flex w-full my-[20px]">
                             <p class="text-[#353F50] leading-[16.8px] text-left text-[16px] !font-semibold">© <script>document.write(new Date().getFullYear())</script> Finchglow Travels. All rights reserved</p>
@@ -1842,10 +1798,196 @@
                 </div>
             </section>
 
+        </footer> -->
+        <footer id="down" class="relative flex flex-col justify-center items-center w-full h-auto " >
+            <section class="bg-[#05284C]  relative  flex flex-col justify-center items-center w-full h-auto ">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px]  pt-[70px] mb-[60px] px-[64px] my-0 mx-auto">
+                    
+                    <!-- start growing your business -->
+                    <div class="flex flex-col justify-center items-center text-center w-full">
+                        <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#FFFFFF] mb-[20px] text-[48px] sm:text-[61px] leading-[60px] sm:leading-[72px] tracking-[-2%]">Start growing your travel business now!</h2>
+                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-full flex flex-col justify-center items-center ">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] at594:w-[350px] sm:w-full">
+                                Join over 4000+ partners already trading with us and become a part of our exclusive Trade Partner group.
+                            </p>
+                            <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex items-center justify-center w-[178px] h-auto "> 
+                                <a href="#" class="cdn">
+                                    Get started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative z-[20] flex justify-end items-end w-full ">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="relative bottom-[-78px] text-center right-0 bg-[#697E94] h-[36px] w-[158px] pt-[8px] px-[15px]">
+                            <a href="#top" class="back-to-top-box flex gap-[10px] !text-[#FFFFFF] ">Back to top
+                                <img class="back-to-top w-[20px] H-[20px]" src="image/service/icon/Frame 39920.png" alt="arrow up">
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+            </section>
+            <!-- copy rights, products & services -->
+            <section class="bg-footer-pop relative flex flex-col justify-center items-center w-full h-auto ">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[64px] my-0 mx-auto">
+                    <div class="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
+                        
+                        <div class="flex flex-col justify-between w-full md:w-[340px] md:h-[244px] gap-[42px]  at500:gap-0">
+                            <div class="text-2xl cursor-pointer w-[128.07px] h-[36.02px]">
+                                <a class="w-full" href="index.html">
+                                    <img class="w-full h-auto transition-all duration-300 ease-in-out" src="image/FT_logo_X5-01.png" alt="logo">
+                                </a>
+                            </div>
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#506982] ">
+                                Finchglow Travels Nigeria Limited is a leading travel management company headquartered 
+                                in Nigeria with 8 offices across Lagos, Abuja, Kano and Port Harcourt.
+                            </p>
+                            <div class="flex">
+                                <ul class="ipx:flex justify-center items-center gap-y-4 gap-x-8">
+                                    <!-- <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[147.15px] h-[21.23px]">
+                                        <a href="#">
+                                            <img src="image/470039d893a3fca6882eb9e119b91584.png" alt="amaseus-logo">
+                                        </a>
+                                    </li> -->
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[182.74px] h-[60px] mix-blend-multiply">
+                                        <a href="#">
+                                            <img src="image/Accredited Agent logo.png" alt="Accredited Agent logo">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex  justify-between md:h-[244px] w-full md:w-[320px] gap-[32px]">
+
+                            <div class="w-full md:w-[144px]">
+                                <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
+                                    <li>
+                                        <a class="font-semibold font-Metropolis text-[16px] leading-[24px] text-[#0260EE]">Product</a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="index.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Overview</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="about.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Features</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Solutions</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Tutorials</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Pricing</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Releases</a>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!----contact Us -->
+                            <div class="w-full md:w-[144px]">
+                                <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
+                                    <li>
+                                        <a class="font-semibold font-Metropolis text-[16px] leading-[24px] text-[#0260EE]">Services</a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="index.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Blog</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="about.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Newsletter</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Events</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Help centre</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Tutorials</a>
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a href="works.html">
+                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Support</a>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hr line-->
+                    <hr class="h-[2px] w-full bg-[#81B0F7]">
+                    <!--copyright-->
+                    <div class="md:flex justify-between items-center w-full h-auto my-[30px] md:h-[24px]">
+                        <div class="flex w-full my-[20px]">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#353F50] leading-[16.8px] text-left text-[16px] !font-semibold">© <script>document.write(new Date().getFullYear())</script> Finchglow Travels. All rights reserved</p>
+                        </div>
+                        <div>
+                            <ul data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex gap-4">
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-instagram hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-x-twitter hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-youtube hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </section>
+
         </footer>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -88,11 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
     closeMenu.addEventListener('click', close);
 
     function show() {
-        mainMenu.classList.add('top-[63px]'); // Show the menu
+        mainMenu.classList.add('top-[96px]'); // Show the menu
     }
 
     function close() {
-        mainMenu.classList.remove('top-[63px]'); // Hide the menu
+        mainMenu.classList.remove('top-[96px]'); // Hide the menu
     }
 
     // Add scroll event listener

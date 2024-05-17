@@ -4,18 +4,29 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
+        'transparent': 'transparent',
+        'current': 'currentColor',
         'white': '#ffffff',
         'footer-pop': 'var(--90, #E6EFFD);',
         'midnight': 'linear-gradient(3deg, rgba(22, 101, 52, 1), rgba(187, 247, 208, 0.505), rgba(255, 255, 255, 0))',
         'meta': 'rgb(187 185 185 / 69%)',
         'regal-blue': 'rgb(96 114 129 / 96%)',
-        'custom1': 'linear-gradient(43.45deg, #E6EFFD 8.38%, #FFFFFF 97.69%), linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%)',
+        'custom1': '',
         'regale-blue': 'linear-gradient(58.29deg, #3580F1 -166.39%, #FFFFFF 76.55%)',
+       
         
         
         
+        
+      },
+
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%)',
+        'custom1-gradient': `
+          linear-gradient(43.45deg, #E6EFFD 8.38%, #FFFFFF 97.69%),
+          linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+          linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%)
+        `,
       },
 
 
