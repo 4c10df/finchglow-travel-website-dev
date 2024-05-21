@@ -1,0 +1,358 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsletter</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="src/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38e77e8a43.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="src/form.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body class="cursor-auto z-50 bg-black">
+    <div class="relative flex flex-col justify-center items-center w-full bg-black">
+        <header id="top"  class="relative w-full h-auto flex flex-col justify-center items-center  ">
+        
+            <nav id="navbar1" class="z-[50] fixed top-0 h-[114px] pt-[46px] pb-[26px] bg-[#F1F5FC] flex md:items-center silver:justify-between w-full ">
+            
+                <div class="z-[9999] flex silver:justify-between w-full  2xl:w-[1280px] px-[15px] at500:px-[64px] my-0 mx-auto ">
+
+                    <div class="flex justify-between silver:justify-start items-center relative w-full silver:w-[300px] ">
+                        <!-- logo controls -->
+                        <div class="text-2xl cursor-pointer w-[122.07px] h-[29.52px]">
+                            <a class="w-full" href="index.html">
+                                <img id="second-logo#" class="w-full h-auto transition-all duration-300 ease-in-out" src="image/FT_logo_X5-01.png" alt="logo">
+                                <!-- <img id="first-logo" class="w-full h-auto transition-all duration-300 ease-in-out" src="image/finchglow-logo.png" alt="logo"> -->
+                            </a>
+                        </div>
+                        <!-- menu controls -->
+                        <span class="text-3xl cursor-pointer mx-2 silver:hidden block h-[21.86px] w-[17.21px] ">
+                            <div class="z-[9999]" id="close-Icon" onclick="toggleIcons(), openIcon() ">
+                                <img class=" w-full h-full transition-all duration-300 ease-in-out" src="image/Buttons Container.png" alt="menu" >
+                            </div>
+                            <div id="open-Icon" class="closeMenu hidden" onclick="toggleIcons(), closeIcon() ">
+                                <i class="fa-solid fa-xmark !text-[#05284C] transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
+                            </div>
+                        </span>
+                        <!-- menu controls -->
+                    </div>
+                    <!-- drop-menu list -->
+                    <div class="silver:relative flex justify-end items-end silver:w-[548px]">
+                        <ul id="open1" class="cass flex flex-col silver:flex-row justify-end items-center z-[888] silver:z-auto float-left rounded-[8px] 
+                            silver:static  absolute bg-[#F1F5FC]  w-full left-0  top-[-555px] transition-all ease-in duration-500 ">
+                        
+                
+                            <li class=" my-6 silver:my-0">
+                                <a class=" py-2  !text-[#05284C] text-[12px] font-bold border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="about.html">About Us</a>
+                            </li>
+                            <li class=" my-6 silver:my-0 ">
+                                <a class="py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="service.html">
+                                    Services
+                                </a>
+                            </li>
+                            <li  class=" my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid  border-[#81B0F7] border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class=" my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
+                                    Branches
+                                </a>
+                            </li>
+                            
+                            <li class=" silver:ml-8 silver:mr-0 px-[15px] silver:px-0 my-6 silver:my-0 w-full silver:w-[182px]">
+                                <div class=" items-center justify-end w-full silver:w-[182px] h-auto">
+                                    <a href="#">
+                                        <button class="!text-[12px] !text-[#05284C]">Register as Trade Partner</button>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- drop-menu list -->
+                
+                    <div class="flex items-center justify-end w-[65px] h-auto silver:hidden">
+                        <a href="#">
+                            <button class="!text-[12px] !text-[#FFFFFF] !bg-[#05284C] !px-[12px] !border-none">Login</button>
+                        </a>
+                    </div> 
+                </div>
+            </nav>
+
+        </header>
+        
+
+        <main class="w-full h-auto flex flex-col justify-center items-center pt-[114px]">
+             <!-- Corporate Travel Management -->
+             <section class="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full  overflow-hidden">
+                <div class="static w-full  flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] pt-[60px] at500:px-[64px] md:pr-[64px] md:pl-[94px]  my-0 mx-auto">
+                    <div class="flex flex-col lg:flex-row justify-between  w-full gap-[30px] lg:gap-[168px]">
+
+                        <div class="relative flex flex-col justify-center items-start w-full  text-left gap-[17px] ">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#0260EE]">
+                                Newsletter
+                            </span>
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] xl:w-[513px]">
+                                We are on all your favourite media platforms, check us out!
+                            </h3>
+                        </div>
+                    
+                        <div class="relative flex flex-col justify-center items-center lg:px-[30px] py-0 w-full  h-auto ">
+                            <div class="flex flex-col justify-center items-center border-l-[#CCDFFC] border-l-[4px] px-[20px]">
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2  py-0 text-[#697E94] text-left xl:w-[340px]">
+                                    We are not just the leaders in facilitating seamless travels, we are also impacting the travel industry one story at a time.
+                                </span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                 <!-- image background -->
+                <div class="relative  flex flex-col justify-center items-center bg-fixed bg-no-repeat bg-cover bg-center h-[474px] py-[70px] w-full overflow-hidden" style="background-image:url(./image/blog/background.jpeg);"></div>
+            </section>
+
+            <!-- sign-up -->
+            <section class="relative bg-[#05284C]  flex flex-col justify-center items-center w-full h-auto">
+                <div class="static  w-full flex flex-col justify-center  max-w-[1280px] px-[30px] my-0 mx-auto">
+                    <!-- sign-up -->
+                    <div class="relative bottom-[-44px]  bg-[#E6EFFD] rounded-[14.22px] z-[33] shadow-md md:shadow-lg 
+                        flex justify-center items-center w-full md:h-[217.78px] p-[30px] max-w-[1080.89px] my-0 mx-auto ">
+                        <!--row1 -->
+                        <div class="relative flex flex-col sm:flex-row justify-between items-center w-full gap-[32px] ">
+
+                            <!--news-->
+                            <div class=" w-full  lg:w-[476.11px] min-h-[1px] ">
+                                <h2 class="leading-[38px] text-[#05284C] text-[30px]">Sign up for our newsletter</h2>
+                                <p class="text-[#506982] leading-[28px] text-[18px] lg:w-[407px]">
+                                    Be the first to know about releases and industry news and insights.
+                                </p>
+                            </div>
+                            <!--news-->
+                            <!--Form Column-->
+                            <div class="flex flex-col justify-center w-full lg:w-[455px]">
+                        
+
+                                <form method="post" action="">
+                                    
+                                    <div class="flex justify-center items-center gap-4 w-full">
+
+                                        <div class="relative block m-0 rounded-[3px] w-full lg:w-[321px]">
+                                            <input class="leading-[24px] rounded-[4px] bg-none pb-5 text-white bg-regal-blue4 h-[50px] text-[14px] py-[13px] px-[20px]
+                                            z-[2] shadow w-full" type="text" name="email" value="" placeholder="Your Name" required="Enter your email">
+                                        </div>
+                                        
+                                        <div class="w-[118px]">
+                                            <input type="submit" class="cdn" value="Subscribe"/>
+                                        </div>
+                                        
+                                    </div>
+
+                                </form>
+                                <div class="w-full mt-[10px]">
+                                    <p class="text-[#375370] leading-[20px] text-[14px] sm:w-[321px]">
+                                        We care about your data in our privacy policy
+                                    </p>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+                        <!--Form Column-->
+                            
+                    </div>
+                </div>
+            </section>
+
+        </main> 
+
+        <footer id="down" class="relative flex flex-col justify-center items-center w-full h-auto " >
+            <section class="bg-[#05284C]  relative  flex flex-col justify-center items-center w-full h-auto ">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px]  pt-[70px] mb-[60px] px-[64px] my-0 mx-auto">
+                    
+                    <!-- start growing your business -->
+                    <div class="flex flex-col justify-center items-center text-center w-full">
+                        <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#FFFFFF] mb-[20px] text-[48px] sm:text-[61px] leading-[60px] sm:leading-[72px] tracking-[-2%]">Start growing your travel business now!</h2>
+                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-full flex flex-col justify-center items-center ">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] at594:w-[350px] sm:w-full">
+                                Join over 4000+ partners already trading with us and become a part of our exclusive Trade Partner group.
+                            </p>
+                            <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex items-center justify-center w-[178px] h-auto "> 
+                                <a href="#" class="cdn">
+                                    Get started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative z-[20] flex justify-center items-center silver:justify-end silver:items-end w-full ">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="relative flex justify-center items-center bottom-[-78px] text-center right-0 bg-[#697E94] h-[36px] w-[158px] py-[8px] px-[15px]">
+                            <a href="#top" class="back-to-top-box flex justify-center items-center  gap-[10px] !text-[#FFFFFF] ">Back to top
+                                <img class="back-to-top w-[20px] H-[20px]" src="image/service/icon/Frame 39920.png" alt="arrow up">
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+            </section>
+            <!-- copy rights, products & services -->
+            <section class="bg-footer-pop relative flex flex-col justify-center items-center w-full h-auto ">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[64px] my-0 mx-auto">
+                    <div class="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
+                        
+                        <div class="flex flex-col justify-between w-full md:w-[403px] md:h-[244px] gap-[42px]  at500:gap-0">
+                            <div class="text-2xl cursor-pointer w-[128.07px] h-[36.02px]">
+                                <a class="w-full" href="index.html">
+                                    <img class="w-full h-auto transition-all duration-300 ease-in-out" src="image/FT_logo_X5-01.png" alt="logo">
+                                </a>
+                            </div>
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#506982] ">
+                                Finchglow Travels Nigeria Limited is a leading travel management company headquartered 
+                                in Nigeria with 8 offices across Lagos, Abuja, Kano and Port Harcourt.
+                            </p>
+                            <div class="flex">
+                                <ul class="ipx:flex justify-center items-center gap-y-4 gap-x-8">
+                                    <!-- <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[147.15px] h-[21.23px]">
+                                        <a href="#">
+                                            <img src="image/470039d893a3fca6882eb9e119b91584.png" alt="amaseus-logo">
+                                        </a>
+                                    </li> -->
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[182.74px] h-[60px] mix-blend-multiply">
+                                        <a href="#">
+                                            <img src="image/Accredited Agent logo.png" class="w-[182.74px] h-[60px] object-cover" alt="Accredited Agent logo">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex  justify-between md:h-[244px] w-full md:w-[385px] gap-[32px]">
+
+                            <div class="w-full md:w-[176.5px]">
+                                <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="about.html">
+                                            About us
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="trade.html">
+                                            Trade Partner Plus
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="corporate.html">
+                                            Corporate Travel Management
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="bespoke.html">
+                                            Leisure Travel
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="ancillary.html">
+                                            Ancillary Services
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="#">
+                                            Products
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <!----contact Us -->
+                            <div class="w-full md:w-[176.5px]">
+                                <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
+                                    
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="blog.html">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="newsletter.html">
+                                            Newsletter
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="branches.html">
+                                            Branches
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="faq.html">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="testimonials.html">
+                                            Testimonials
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hr line-->
+                    <hr class="h-[2px] w-full bg-[#81B0F7]">
+                    <!--copyright-->
+                    <div class="md:flex justify-between items-center w-full h-auto my-[30px] md:h-[24px]">
+                        <div class="flex w-full my-[20px]">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#353F50] leading-[16.8px] text-left text-[16px] !font-semibold">© <script>document.write(new Date().getFullYear())</script> Finchglow Travels. All rights reserved</p>
+                        </div>
+                        <div>
+                            <ul data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex gap-4">
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-instagram hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-x-twitter hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-youtube hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </section>
+
+        </footer>
+    </div>
+    <script src="js/pages_navigation.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

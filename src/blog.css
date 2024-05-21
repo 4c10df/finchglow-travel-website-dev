@@ -1,0 +1,54 @@
+
+
+
+
+/* blog */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    padding: 0 10px;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+@media (min-width: 414px){
+    .pagination {
+        
+        gap: 0.5rem;
+        
+    }
+    
+}
+
+
+.page-number {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    color: #667085;
+    cursor: pointer;
+}
+
+.page-number.active {
+    color: #2563EB;
+} 

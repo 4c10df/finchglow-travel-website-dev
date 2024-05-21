@@ -4,15 +4,16 @@
     padding: 0;
     color: #fff;
     font-optical-sizing: auto;
-    font-family: "Metropolis", sans-serif;
+    font-family: 'Metropolis', sans-serif;
   
 }
 
 
 
-@import url(https://fonts.google.com/specimen/Space+Grotesk);
- 
+@import url('https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700;800;900&display=swap');
 
+
+ 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -120,6 +121,13 @@ h6{
     line-height: 24px;
     font-family: "Metropolis";
 }
+.txt6{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #05284C;
+    font-family: "Metropolis";
+}
 
 p{
     font-weight: 400;
@@ -145,7 +153,12 @@ p{
     background: linear-gradient(58.29deg, #3580F1 -166.39%, #FFFFFF 76.55%);
 
 }
-
+header nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 ul.cass li {
     color: #FFFFFF; /* Set the default text color */
@@ -156,6 +169,12 @@ ul.cass li button{
     border-color: #9ABFF8 ;
     transition: all 3s ease;
 }
+nav button.log{
+    color: #05284C; /* Set the text color when scrolled */
+    background-color: #FFFFFF;
+    transition: all 3s ease;
+    
+}
 
 /* Change text color on scroll */
 header.scrolled ul.cass li {
@@ -165,6 +184,13 @@ header.scrolled ul.cass li {
 header.scrolled ul.cass li button{
     color: #05284C; /* Set the text color when scrolled */
     border-color: #0260EE;
+    transition: all 3s ease;
+    
+}
+header.scrolled nav button.log{
+    
+    color:  #FFFFFF; /* Set the text color when scrolled */
+    background-color: #05284C;
     transition: all 3s ease;
     
 }
@@ -181,56 +207,10 @@ header.scrolled ul.cass li button{
 
 
 
-/* contact form 
-
-.group1{
-    display: flex;
-    flex-direction: column;
-}
-input {
-    display: block;
-    width: 100%;
-    line-height: 24px;
-    font-size: 16px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    padding-top: 12px;
-    padding-right: 15px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-    border-color: #f4f4f4;
-    color: #484848;
-    background-color: #f4f4f4;
-}
-
-textarea {
-    display: block;
-    width: 100%;
-    line-height: 24px;
-    font-size: 16px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    resize: none;
-    height: 110px;
-    padding-top: 12px;
-    padding-right: 15px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-    z-index: 1;
-    border-color: #f4f4f4;
-    background-color: #f4f4f4;
-}
-
-textarea:-ms-input-placeholder {
-    font-size: 14px;
-    color: #484848;
-    font-weight: normal;
-} */
 
 
 /* buttons */
+
 .btn{
     display: flex;
     justify-content: center;
@@ -238,7 +218,7 @@ textarea:-ms-input-placeholder {
     gap: 8px;
     border: none !important;
     font-size: 16px;
-    color: #3580F1 ;
+    color: #3580F1;
     border-radius: 6px !important;
     cursor: pointer;
     transition:all 0.3s ease !important ;
@@ -246,7 +226,7 @@ textarea:-ms-input-placeholder {
     font-weight: 500;
 }
 .btn:hover{
-    gap: 20px;
+    gap: 15px;
     color: white;
 }
 
@@ -326,7 +306,7 @@ button:hover {
     border-radius: 15px;
 
 }
-
+/* buttons  ends*/
 
 
 /* homepage slider starts */
@@ -761,10 +741,14 @@ display: none !important;
     letter-spacing: -2%;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: 500 !important;
 }
 
 .sas{
     color: #05284C !important;
+}
+.partern{
+    color: #0260EE !important;
 }
 /* .swiper-pagination {
     position: relative;

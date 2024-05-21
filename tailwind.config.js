@@ -27,7 +27,9 @@ module.exports = {
           linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
           linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%)
         `,
+        'custom2-gradient': 'linear-gradient(42.35deg, #FFE0E1 7.98%, #FFFFFF 60.52%)',
       },
+      
 
 
 

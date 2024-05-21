@@ -1,0 +1,1654 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="src/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38e77e8a43.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="src/form.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body class="cursor-auto z-50 bg-black">
+    <div class="relative flex flex-col justify-center items-center w-full bg-black">
+        <header id="top"  class="relative w-full h-auto flex flex-col justify-center items-center  ">
+        
+            <nav id="navbar1" class="z-[50] fixed top-0 h-[114px] pt-[46px] pb-[26px] bg-[#F1F5FC] flex md:items-center silver:justify-between w-full ">
+            
+                <div class="z-[9999] flex silver:justify-between w-full  2xl:w-[1280px] px-[15px] at500:px-[64px] my-0 mx-auto ">
+
+                    <div class="flex justify-between silver:justify-start items-center relative w-full silver:w-[300px] ">
+                        <!-- logo controls -->
+                        <div class="text-2xl cursor-pointer w-[122.07px] h-[29.52px]">
+                            <a class="w-full" href="index.html">
+                                <img id="second-logo#" class="w-full h-auto transition-all duration-300 ease-in-out" src="image/FT_logo_X5-01.png" alt="logo">
+                                <!-- <img id="first-logo" class="w-full h-auto transition-all duration-300 ease-in-out" src="image/finchglow-logo.png" alt="logo"> -->
+                            </a>
+                        </div>
+                        <!-- menu controls -->
+                        <span class="text-3xl cursor-pointer mx-2 silver:hidden block h-[21.86px] w-[17.21px] ">
+                            <div class="z-[9999]" id="close-Icon" onclick="toggleIcons(), openIcon() ">
+                                <img class=" w-full h-full transition-all duration-300 ease-in-out" src="image/Buttons Container.png" alt="menu" >
+                            </div>
+                            <div id="open-Icon" class="closeMenu hidden" onclick="toggleIcons(), closeIcon() ">
+                                <i class="fa-solid fa-xmark !text-[#05284C] transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
+                            </div>
+                        </span>
+                        <!-- menu controls -->
+                    </div>
+                    <!-- drop-menu list -->
+                    <div class="silver:relative flex justify-end items-end silver:w-[548px]">
+                        <ul id="open1" class="cass flex flex-col silver:flex-row justify-end items-center z-[888] silver:z-auto float-left rounded-[8px] 
+                            silver:static  absolute bg-[#F1F5FC]  w-full left-0  top-[-555px] transition-all ease-in duration-500 ">
+                        
+                
+                            <li class=" my-6 silver:my-0">
+                                <a class=" py-2  !text-[#05284C] text-[12px] font-bold border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="about.html">About Us</a>
+                            </li>
+                            <li class=" my-6 silver:my-0 ">
+                                <a class="py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="service.html">
+                                    Services
+                                </a>
+                            </li>
+                            <li  class=" my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid  border-[#81B0F7] border-b-[4px] transition-all duration-300 ease-in-out" href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class=" my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="branches.html">
+                                    Branches
+                                </a>
+                            </li>
+                            
+                            <li class=" silver:ml-8 silver:mr-0 px-[15px] silver:px-0 my-6 silver:my-0 w-full silver:w-[182px]">
+                                <div class=" items-center justify-end w-full silver:w-[182px] h-auto">
+                                    <a href="#">
+                                        <button class="!text-[12px] !text-[#05284C]">Register as Trade Partner</button>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- drop-menu list -->
+                
+                    <div class="flex items-center justify-end w-[65px] h-auto silver:hidden">
+                        <a href="#">
+                            <button class="!text-[12px] !text-[#FFFFFF] !bg-[#05284C] !px-[12px] !border-none">Login</button>
+                        </a>
+                    </div> 
+                </div>
+            </nav>
+
+        </header>
+        
+
+        <main class="w-full h-auto flex flex-col justify-center items-center pt-[114px]">
+             <!-- Corporate Travel Management -->
+             <section class="relative bg-[#EEF5FF] flex flex-col justify-center items-center w-full  overflow-hidden">
+                <div class="static w-full  flex flex-col justify-center items-center 2xl:w-[1280px] px-[15px] py-[60px] at500:px-[64px] md:pr-[64px] md:pl-[94px]  my-0 mx-auto">
+                    <div class="flex flex-col lg:flex-row justify-between  w-full gap-[30px] lg:gap-[168px]">
+
+                        <div class="relative flex flex-col justify-center items-start w-full  text-left gap-[17px] ">
+                            <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2 text-[#0260EE]">
+                                Media
+                            </span>
+                            <h3 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] xl:w-[513px]">
+                                We are on all your favourite media platforms, check us out!
+                            </h3>
+                        </div>
+                    
+                        <div class="relative flex flex-col justify-center items-center lg:px-[30px] py-0 w-full  h-auto ">
+                            <div class="flex flex-col justify-center items-center border-l-[#CCDFFC] border-l-[4px] px-[20px]">
+                                <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt2  py-0 text-[#697E94] text-left xl:w-[340px]">
+                                    We are not just the leaders in facilitating seamless travels, we are also impacting the travel industry one story at a time.
+                                </span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                 <!-- image background -->
+                <div class="relative  flex flex-col justify-center items-center bg-fixed bg-no-repeat bg-cover bg-center h-[474px] py-[70px] w-full overflow-hidden" style="background-image:url(./image/blog/background.jpeg);"></div>
+            </section>
+
+            <section class="relative bg-[#EEF5FF] flex justify-center flex-col items-center w-full h-auto " >
+                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px] at500:px-[70px] my-0 mx-auto">
+                    <div class="container">
+                        <h1 class="text-3xl font-bold mb-4 text-left text-[#05284C]">All blog posts</h1>
+                        <div class="slider">
+                            <div class="slider-content">
+                                <!-- Blog Post 1 -->
+                                <div class="slide">
+                                    <!-- Content of Slide 1 -->
+                                    <div class="flex flex-col justify-center items-start w-full gap-[32px]">
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]">
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[287px] w-full">
+                                                    <img src="image/blog/image1.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Business Day • 9/12/2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image2.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Demi WIlkinson • 16 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            PM mental models
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Mental models are simple expressions of complex processes or relationships.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
+                                                
+                                                <div class="h-[299px] w-full">
+                                                    <img src="image/blog/image3.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Candice Wu • 15 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            What is Wireframing?
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Introduction to Wireframing and its Principles. Learn from the best in the industry.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                            
+        
+                                        </div>
+        
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px]">
+        
+                                            
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image4.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Natali Craig • 14 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            How collaboration makes us better designers
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Collaboration can make our teams stronger, and our individual designs better.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[319px] w-full">
+                                                    <img src="image/blog/image5.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Drew Cano • 13 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Our top 10 Javascript frameworks to use
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        JavaScript frameworks make development easy with extensive features and functionalities.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px] hidden lg:block">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image6.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Orlando Diggs • 12 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Podcast: Creating a better CX Community
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Starting a community doesn’t need to be complicated, but how do you get started?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Blog Post 2 -->
+                                <div class="slide">
+                                    <!-- Content of Slide 1 -->
+                                    <div class="flex flex-col justify-center items-start w-full gap-[32px]">
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]">
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[287px] w-full">
+                                                    <img src="image/blog/image1.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Business Day • 9/12/2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image2.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Demi WIlkinson • 16 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            PM mental models
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Mental models are simple expressions of complex processes or relationships.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
+                                                
+                                                <div class="h-[299px] w-full">
+                                                    <img src="image/blog/image3.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Candice Wu • 15 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            What is Wireframing?
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Introduction to Wireframing and its Principles. Learn from the best in the industry.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                            
+        
+                                        </div>
+        
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px]">
+        
+                                            
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image4.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Natali Craig • 14 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            How collaboration makes us better designers
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Collaboration can make our teams stronger, and our individual designs better.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[319px] w-full">
+                                                    <img src="image/blog/image5.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Drew Cano • 13 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Our top 10 Javascript frameworks to use
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        JavaScript frameworks make development easy with extensive features and functionalities.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px] hidden lg:block">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image6.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Orlando Diggs • 12 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Podcast: Creating a better CX Community
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Starting a community doesn’t need to be complicated, but how do you get started?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Blog Post 3 -->
+                                <div class="slide">
+                                    <!-- Content of Slide 1 -->
+                                    <div class="flex flex-col justify-center items-start w-full gap-[32px]">
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]">
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[287px] w-full">
+                                                    <img src="image/blog/image1.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Business Day • 9/12/2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image2.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Demi WIlkinson • 16 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            PM mental models
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Mental models are simple expressions of complex processes or relationships.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
+                                                
+                                                <div class="h-[299px] w-full">
+                                                    <img src="image/blog/image3.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Candice Wu • 15 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            What is Wireframing?
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Introduction to Wireframing and its Principles. Learn from the best in the industry.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                            
+        
+                                        </div>
+        
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px]">
+        
+                                            
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image4.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Natali Craig • 14 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            How collaboration makes us better designers
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Collaboration can make our teams stronger, and our individual designs better.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[319px] w-full">
+                                                    <img src="image/blog/image5.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Drew Cano • 13 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Our top 10 Javascript frameworks to use
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        JavaScript frameworks make development easy with extensive features and functionalities.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px] hidden lg:block">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image6.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Orlando Diggs • 12 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Podcast: Creating a better CX Community
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Starting a community doesn’t need to be complicated, but how do you get started?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Blog Post 4 -->
+                                <div class="slide">
+                                    <!-- Content of Slide 1 -->
+                                    <div class="flex flex-col justify-center items-start w-full gap-[32px]">
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]">
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[287px] w-full">
+                                                    <img src="image/blog/image1.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Business Day • 9/12/2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image2.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Demi WIlkinson • 16 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            PM mental models
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Mental models are simple expressions of complex processes or relationships.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
+                                                
+                                                <div class="h-[299px] w-full">
+                                                    <img src="image/blog/image3.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Candice Wu • 15 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            What is Wireframing?
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Introduction to Wireframing and its Principles. Learn from the best in the industry.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                            
+        
+                                        </div>
+        
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px]">
+        
+                                            
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image4.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Natali Craig • 14 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            How collaboration makes us better designers
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Collaboration can make our teams stronger, and our individual designs better.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[319px] w-full">
+                                                    <img src="image/blog/image5.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Drew Cano • 13 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Our top 10 Javascript frameworks to use
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        JavaScript frameworks make development easy with extensive features and functionalities.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px] hidden lg:block">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image6.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Orlando Diggs • 12 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Podcast: Creating a better CX Community
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Starting a community doesn’t need to be complicated, but how do you get started?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Blog Post 5 -->
+                                <div class="slide">
+                                    <!-- Content of Slide 1 -->
+                                    <div class="flex flex-col justify-center items-start w-full gap-[32px]">
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]">
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[287px] w-full">
+                                                    <img src="image/blog/image1.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Business Day • 9/12/2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image2.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Demi WIlkinson • 16 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            PM mental models
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Mental models are simple expressions of complex processes or relationships.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
+                                                
+                                                <div class="h-[299px] w-full">
+                                                    <img src="image/blog/image3.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Candice Wu • 15 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            What is Wireframing?
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Introduction to Wireframing and its Principles. Learn from the best in the industry.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                            
+        
+                                        </div>
+        
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px]">
+        
+                                            
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image4.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Natali Craig • 14 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            How collaboration makes us better designers
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Collaboration can make our teams stronger, and our individual designs better.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[319px] w-full">
+                                                    <img src="image/blog/image5.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Drew Cano • 13 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Our top 10 Javascript frameworks to use
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        JavaScript frameworks make development easy with extensive features and functionalities.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px] hidden lg:block">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image6.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Orlando Diggs • 12 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Podcast: Creating a better CX Community
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Starting a community doesn’t need to be complicated, but how do you get started?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Blog Post 6 -->
+                                <div class="slide">
+                                    <!-- Content of Slide 1 -->
+                                    <div class="flex flex-col justify-center items-start w-full gap-[32px]">
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px] mb-[30px]">
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[287px] w-full">
+                                                    <img src="image/blog/image1.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Business Day • 9/12/2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Dubai Luxury Stores Miss Nigerians for Festive Sales
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image2.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Demi WIlkinson • 16 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            PM mental models
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Mental models are simple expressions of complex processes or relationships.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px]  hidden lg:block">
+                                                
+                                                <div class="h-[299px] w-full">
+                                                    <img src="image/blog/image3.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Candice Wu • 15 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            What is Wireframing?
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Introduction to Wireframing and its Principles. Learn from the best in the industry.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                            
+        
+                                        </div>
+        
+                                        <div class="flex flex-col md:flex-row justify-center items-start w-full gap-[20px]">
+        
+                                            
+        
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                        
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image4.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Natali Craig • 14 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            How collaboration makes us better designers
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Collaboration can make our teams stronger, and our individual designs better.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex flex-col overflow-hidden gap-[20px] ">
+                                                
+                                                <div class="h-[319px] w-full">
+                                                    <img src="image/blog/image5.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px] ">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Drew Cano • 13 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Our top 10 Javascript frameworks to use
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px]  transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        JavaScript frameworks make development easy with extensive features and functionalities.
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+                
+                                            <div class="w-full flex-col overflow-hidden gap-[20px] hidden lg:block">
+                                                
+                                                <div class="h-[240px] w-full">
+                                                    <img src="image/blog/image6.jpeg" alt="" class="w-full h-full object-cover">
+                                                </div>
+                                        
+                                                <div class="flex flex-col justify-start items-start w-full gap-[20px]">
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt4 text-[#0260EE] leading-[24px]">
+                                                        Orlando Diggs • 12 Jan 2022
+                                                    </span>
+                                                    <div class="flex justify-between items-center w-full  hover:gap-[12px]">
+                                                        <h5 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#101828] !leading-[30px] ip8:w-[268px]">
+                                                            Podcast: Creating a better CX Community
+                                                        </h5>
+                                                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[24px]  cursor-pointer">
+                                                            <img class="relative hover:right-[-6px] w-[24px] h-[24px] transition-all duration-75 ease-in-out" src="image/blog/icon/Icon wrap.png" alt="arrow up">
+                                                        </div>
+                                                    </div>
+                                                    <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
+                                                        Starting a community doesn’t need to be complicated, but how do you get started?
+                                                    </span>
+                                                    <!-- <button class="btn">view more</button> -->
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more slides as needed -->
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <!-- <button id="prev" class=" text-[#667085] text-left">&lt; Previous</button> -->
+                            <a id="prev" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="btn hover:!text-[#0260EE]">
+                                <i class="fa-solid fa-arrow-left !text-[#0260EE] hover:!text-[#b1b7c0]"></i>Previous 
+                            </a>
+                            <div class=" hidden ipx:flex ">
+                                <div class="page-number active">1</div>
+                                <div class="page-number">2</div>
+                                <div class="page-number">3</div>
+                                <div class="page-number">4</div>
+                                <div class="page-number">5</div>
+                                <div class="page-number">6</div>
+                            </div>
+                            <!-- <button id="next" class=" text-[#667085] text-right">Next &gt;</button> -->
+                            <a id="next" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="btn hover:!text-[#0260EE]">Next 
+                                <i class="fa-solid fa-arrow-right !text-[#0260EE] hover:!text-[#b1b7c0]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- testimonial -->
+            <section class="relative bg-[#E6EAED] flex justify-center flex-col items-center w-full h-auto silver:h-[412px]">
+                <div class="static w-full flex flex-col justify-center items-center  2xl:w-[1280px] px-[15px] py-[70px] at500:px-[64px] my-0 mx-auto">
+                
+                    <div class="testimonial-container swiper">
+
+                        <div class="testimonial-content swiper-wrapper">
+
+                            
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full ">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full ">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Love the simplicity of the service and the <br> prompt customer support. We can’t imagine<br> working without it.
+                                        </p>
+                                        <h2 class="customer_name sas">Rhye O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern">Trade Partner</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            The Finchglow Travels’ protocol team is amazing! 
+                                            They made my entire travel process seamless.
+                                        </p>
+                                        <h2 class="customer_name sas">Vivian I</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern">Admin and Travel Desk Personnel</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            The Finchglow Travels’ team is amazing! They make my day everytime I 
+                                            have to work with them, especially with their travel deals, transparency and honesty, 
+                                            up to giving cashback to agents when there are such opportunities. I love working with them!
+                                        </p>
+                                        <h2 class="customer_name sas">Sarah</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern">Travel Agent</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Their responses are always quick and succinct, it makes working 
+                                            with the team quite seamless.
+                                        </p>
+                                        <h2 class="customer_name sas">Comfort U</h2>
+                                        <p class="sas text-[16px] leading-[24px] text-left partern">Trade Partner</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            The fact that I am sure of never getting stranded anywhere is one of the 
+                                            reasons why I continually choose Finchglow Travels.
+                                        </p>
+                                        <h2 class="customer_name sas">Ngozi O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            I don't bother about change in requirements as Finchglow Travels 
+                                            keeps me constantly updated and sends reminders a few days to the trip.
+                                        </p>
+                                        <h2 class="customer_name sas">Kunle O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                  
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            I am able to stay informed about happenings in the industry, especially
+                                            with constant changes in the post-Covid era due to the weekly industry updates I receive.
+                                        </p>
+                                        <h2 class="customer_name sas">Adebayo O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Finchglow Travels is swift when responding and pays
+                                            <br> 
+                                            great attention to details.
+                                        </p>
+                                        <h2 class="customer_name sas">Adeola A</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern">Trade Partner</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                  
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            During the AFCON games, Finchglow travels came through 
+                                            <br>
+                                            with the hotel and flight booking at the very last minute.
+                                        </p>
+                                        <h2 class="customer_name sas">Ayinde O</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                   
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            PCR services are cheap and convenient. <br>They come to test me at home.
+                                        </p>
+                                        <h2 class="customer_name sas">Kosoko D.</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            Student fares are affordable, <br>cheaper than most.
+                                        </p>
+                                        <h2 class="customer_name sas">Adanne A</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col justify-center items-center w-full">
+                                
+                                    
+                                    
+                                    <div class="flex flex-col justify-center items-center w-full">
+                                        <span class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <p class="comment sas">
+                                            The account managers are very helpful. <br>They answer every question.
+                                        </p>
+                                        <h2 class="customer_name sas">Ugochi P</h2>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+   
+                        </div>
+
+                        <div class="relative bottom-0 flex  justify-center items-center w-full gap-2 max-w-[1280px] px-[15px] at500:px-[20px] my-0 mx-auto">
+                            <div class="button-next float-right p-2 ">
+                                <i class="fa-solid fa-arrow-left !text-[#697E94] hover:!text-[#0260EE] cursor-pointer"></i>
+                            </div>
+                            <div class="button-prev float-right p-2">
+                                <i class="fa-solid fa-arrow-right !text-[#697E94] hover:!text-[#0260EE] cursor-pointer"></i>
+                            </div>
+                        </div>
+
+                        
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                    
+                            
+                    
+                </div>  
+            </section> 
+  
+        </main> 
+
+        <footer id="down" class="relative flex flex-col justify-center items-center w-full h-auto " >
+            <section class="bg-[#05284C]  relative  flex flex-col justify-center items-center w-full h-auto ">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px]  pt-[70px] mb-[60px] px-[64px] my-0 mx-auto">
+                    
+                    <!-- start growing your business -->
+                    <div class="flex flex-col justify-center items-center text-center w-full">
+                        <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#FFFFFF] mb-[20px] text-[48px] sm:text-[61px] leading-[60px] sm:leading-[72px] tracking-[-2%]">Start growing your travel business now!</h2>
+                        <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-full flex flex-col justify-center items-center ">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[20px] leading-[30px] text-[#CDD4DB] mb-[10px] at594:w-[350px] sm:w-full">
+                                Join over 4000+ partners already trading with us and become a part of our exclusive Trade Partner group.
+                            </p>
+                            <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex items-center justify-center w-[178px] h-auto "> 
+                                <a href="#" class="cdn">
+                                    Get started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative z-[20] flex justify-center items-center silver:justify-end silver:items-end w-full ">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="relative flex justify-center items-center bottom-[-78px] text-center right-0 bg-[#697E94] h-[36px] w-[158px] py-[8px] px-[15px]">
+                            <a href="#top" class="back-to-top-box flex justify-center items-center  gap-[10px] !text-[#FFFFFF] ">Back to top
+                                <img class="back-to-top w-[20px] H-[20px]" src="image/service/icon/Frame 39920.png" alt="arrow up">
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+            </section>
+            <!-- copy rights, products & services -->
+            <section class="bg-footer-pop relative flex flex-col justify-center items-center w-full h-auto ">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[64px] my-0 mx-auto">
+                    <div class="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
+                        
+                        <div class="flex flex-col justify-between w-full md:w-[403px] md:h-[244px] gap-[42px]  at500:gap-0">
+                            <div class="text-2xl cursor-pointer w-[128.07px] h-[36.02px]">
+                                <a class="w-full" href="index.html">
+                                    <img class="w-full h-auto transition-all duration-300 ease-in-out" src="image/FT_logo_X5-01.png" alt="logo">
+                                </a>
+                            </div>
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[16px] leading-[24px] text-[#506982] ">
+                                Finchglow Travels Nigeria Limited is a leading travel management company headquartered 
+                                in Nigeria with 8 offices across Lagos, Abuja, Kano and Port Harcourt.
+                            </p>
+                            <div class="flex">
+                                <ul class="ipx:flex justify-center items-center gap-y-4 gap-x-8">
+                                    <!-- <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[147.15px] h-[21.23px]">
+                                        <a href="#">
+                                            <img src="image/470039d893a3fca6882eb9e119b91584.png" alt="amaseus-logo">
+                                        </a>
+                                    </li> -->
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[182.74px] h-[60px] mix-blend-multiply">
+                                        <a href="#">
+                                            <img src="image/Accredited Agent logo.png" class="w-[182.74px] h-[60px] object-cover" alt="Accredited Agent logo">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex  justify-between md:h-[244px] w-full md:w-[385px] gap-[32px]">
+
+                            <div class="w-full md:w-[176.5px]">
+                                <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="about.html">
+                                            About us
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="trade.html">
+                                            Trade Partner Plus
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="corporate.html">
+                                            Corporate Travel Management
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="bespoke.html">
+                                            Leisure Travel
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="ancillary.html">
+                                            Ancillary Services
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="#">
+                                            Products
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <!----contact Us -->
+                            <div class="w-full md:w-[176.5px]">
+                                <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
+                                    
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="blog.html">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="newsletter.html">
+                                            Newsletter
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="branches.html">
+                                            Branches
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="faq.html">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="testimonials.html">
+                                            Testimonials
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--hr line-->
+                    <hr class="h-[2px] w-full bg-[#81B0F7]">
+                    <!--copyright-->
+                    <div class="md:flex justify-between items-center w-full h-auto my-[30px] md:h-[24px]">
+                        <div class="flex w-full my-[20px]">
+                            <p data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="text-[#353F50] leading-[16.8px] text-left text-[16px] !font-semibold">© <script>document.write(new Date().getFullYear())</script> Finchglow Travels. All rights reserved</p>
+                        </div>
+                        <div>
+                            <ul data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="flex gap-4">
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-instagram hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-x-twitter hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-youtube hover:text-[#166534] transition-all duration-300 ease-in-out"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </section>
+
+        </footer>
+    </div>
+    <script>
+         function openOverlay() {
+            const overlay = document.getElementById('overlay');
+            overlay.classList.add('active');
+        }
+
+        function closeOverlay() {
+            const overlay = document.getElementById('overlay');
+            overlay.classList.remove('active');
+        }
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/pages_navigation.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

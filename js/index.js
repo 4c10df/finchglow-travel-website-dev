@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.querySelector(".prev-btn");
     let slideIndex = 0;
     let slideInterval;
+    let startX, endX;
+    let isDragging = false;
 
     // Function to show slide based on index
     const showSlide = (index) => {
@@ -65,9 +67,71 @@ document.addEventListener('DOMContentLoaded', () => {
         slideInterval = setInterval(showNextSlide, 30000); // Restart automatic sliding after 30 seconds delay
     });
 
+    // Touch events for swipe
+    slides.forEach(slide => {
+        slide.addEventListener('touchstart', handleTouchStart, false);
+        slide.addEventListener('touchmove', handleTouchMove, false);
+        slide.addEventListener('touchend', handleTouchEnd, false);
+    });
 
+    // Mouse events for drag
+    slides.forEach(slide => {
+        slide.addEventListener('mousedown', handleMouseDown, false);
+        slide.addEventListener('mousemove', handleMouseMove, false);
+        slide.addEventListener('mouseup', handleMouseUp, false);
+        slide.addEventListener('mouseleave', handleMouseUp, false); // Handle case where mouse leaves slide area
+    });
 
+    function handleTouchStart(event) {
+        startX = event.touches[0].clientX;
+    }
+
+    function handleTouchMove(event) {
+        endX = event.touches[0].clientX;
+    }
+
+    function handleTouchEnd() {
+        handleSwipe();
+        startX = endX = null; // Reset values after handling swipe
+    }
+
+    function handleMouseDown(event) {
+        startX = event.clientX;
+        isDragging = true; // Set dragging flag
+    }
+
+    function handleMouseMove(event) {
+        if (isDragging) {
+            endX = event.clientX;
+        }
+    }
+
+    function handleMouseUp() {
+        if (isDragging) {
+            handleSwipe();
+            isDragging = false; // Reset dragging flag
+            startX = endX = null; // Reset values after handling swipe
+        }
+    }
+
+    function handleSwipe() {
+        if (startX !== null && endX !== null) {
+            if (startX - endX > 50) {
+                // Swiped left
+                clearInterval(slideInterval); // Stop automatic sliding
+                showNextSlide();
+                slideInterval = setInterval(showNextSlide, 30000); // Restart automatic sliding after 30 seconds delay
+            } else if (endX - startX > 50) {
+                // Swiped right
+                clearInterval(slideInterval); // Stop automatic sliding
+                showPreviousSlide();
+                slideInterval = setInterval(showNextSlide, 30000); // Restart automatic sliding after 30 seconds delay
+            }
+        }
+    }
 });
+
+
 //homepage first slider ends
 
 

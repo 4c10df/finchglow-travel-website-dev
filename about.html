@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,wght@1,300&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;400;700;800&family=Nunito:wght@700&family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/38e77e8a43.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="swiper-bundle.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
  
@@ -21,10 +20,11 @@
     <div class="relative flex flex-col justify-center items-center w-full bg-black">
         <header id="top"  class="relative w-full h-auto flex flex-col justify-center items-center  ">
         
-            <nav id="navbar1" class="z-[9999] fixed top-0 h-[114px] pt-[46px] pb-[26px] bg-[#F1F5FC] flex md:items-center silver:justify-between w-full ">
+            <nav id="navbar1" class="z-[50] fixed top-0 h-[114px] pt-[46px] pb-[26px] bg-[#F1F5FC] flex md:items-center silver:justify-between w-full ">
             
-                <div class="z-[9999] flex md:items-center silver:justify-between w-full  2xl:w-[1280px] px-[15px] at500:px-[64px] my-0 mx-auto ">
-                    <div class="flex justify-between silver:justify-start items-center relative w-full silver:pr-[20px]">
+                <div class="z-[9999] flex silver:justify-between w-full  2xl:w-[1280px] px-[15px] at500:px-[64px] my-0 mx-auto ">
+
+                    <div class="flex justify-between silver:justify-start items-center relative w-full silver:w-[300px] ">
                         <!-- logo controls -->
                         <div class="text-2xl cursor-pointer w-[122.07px] h-[29.52px]">
                             <a class="w-full" href="index.html">
@@ -34,48 +34,43 @@
                         </div>
                         <!-- menu controls -->
                         <span class="text-3xl cursor-pointer mx-2 silver:hidden block h-[21.86px] w-[17.21px] ">
-                            <div class="z-[9999]" id="close-Icon" onclick="toggleIcons(), openIcon()">
-                                <img id="second-icon" class="openMenu w-full h-full transition-all duration-300 ease-in-out" src="image/Buttons Container.png" alt="menu"  onclick="show()">
-                                <!-- <img id="first-icon" class="openMenu w-full h-full z-10 transition-all duration-300 ease-in-out" src="image/Buttons Container (1).png" alt="menu"  onclick="show()"> -->
+                            <div class="z-[9999]" id="close-Icon" onclick="toggleIcons(), openIcon() ">
+                                <img class=" w-full h-full transition-all duration-300 ease-in-out" src="image/Buttons Container.png" alt="menu" >
                             </div>
-                            <div id="open-Icon" class="closeMenu hidden" onclick="toggleIcons(), closeIcon()">
-                                <i id="icon" class="fa-solid fa-xmark transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
+                            <div id="open-Icon" class="closeMenu hidden" onclick="toggleIcons(), closeIcon() ">
+                                <i class="fa-solid fa-xmark !text-[#05284C] transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
                             </div>
                         </span>
                         <!-- menu controls -->
                     </div>
                     <!-- drop-menu list -->
-                    <div class="px-2">
-                        <ul id="open1" class="cass flex flex-col silver:flex-row justify-center items-center z-[888] silver:z-auto float-left rounded-[8px] 
+                    <div class="silver:relative flex justify-end items-end silver:w-[548px]">
+                        <ul id="open1" class="cass flex flex-col silver:flex-row justify-end items-center z-[888] silver:z-auto float-left rounded-[8px] 
                             silver:static  absolute bg-[#F1F5FC]  w-full left-0  top-[-555px] transition-all ease-in duration-500 ">
                         
                 
-                            <li class="silver:mr-4 my-6 silver:my-0">
-                                <a class="inline-block py-2 w-[55px] !text-[#05284C] text-[12px] font-bold border-solid border-[#81B0F7]  border-b-[4px] transition-all duration-300 ease-in-out " href="about.html">About Us</a>
+                            <li class=" my-6 silver:my-0">
+                                <a class=" py-2  !text-[#05284C] text-[12px] font-bold border-solid border-[#81B0F7] border-b-[4px] transition-all duration-300 ease-in-out " href="about.html">About Us</a>
                             </li>
-                            <li class="silver:mr-4 my-6 silver:my-0 ">
+                            <li class=" my-6 silver:my-0 ">
                                 <a class="py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="service.html">
                                     Services
                                 </a>
                             </li>
-                            <li  class="silver:mr-4 my-6 silver:my-0">
-                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
-                                    Branches
-                                </a>
-                            </li>
-                            <li class="silver:mr-4 my-6 silver:my-0">
-                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
-                                    Product
-                                </a>
-                            </li>
-                            <li class="silver:mr-4 my-6 silver:my-0">
-                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
+                            <li  class=" my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid  hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="blog.html">
                                     Blog
                                 </a>
                             </li>
-                            <li class="mx-4 px-[15px] silver:px-0 my-6 md:my-0 w-full md:w-[182px]">
-                                <div class="sm:hidden silver:block items-center justify-end lg:w-[182px] h-auto">
-                                    <a href="contact.html">
+                            <li class=" my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="branches.html">
+                                    Branches
+                                </a>
+                            </li>
+                            
+                            <li class=" silver:ml-8 silver:mr-0 px-[15px] silver:px-0 my-6 silver:my-0 w-full silver:w-[182px]">
+                                <div class=" items-center justify-end w-full silver:w-[182px] h-auto">
+                                    <a href="#">
                                         <button class="!text-[12px] !text-[#05284C]">Register as Trade Partner</button>
                                     </a>
                                 </div>
@@ -85,11 +80,11 @@
                     </div>
                     <!-- drop-menu list -->
                 
-                    <!-- <div class="flex items-center justify-end w-[65px] h-auto ">
-                        <a href="contact.html">
+                    <div class="flex items-center justify-end w-[65px] h-auto silver:hidden">
+                        <a href="#">
                             <button class="!text-[12px] !text-[#FFFFFF] !bg-[#05284C] !px-[12px] !border-none">Login</button>
                         </a>
-                    </div>  -->
+                    </div> 
                 </div>
             </nav>
 
@@ -272,36 +267,10 @@
                                             <i class="fa-solid fa-star"></i>
                                         </span>
                                         <p class="comment sas">
-                                            Their support team is very responsive. I always appreciate their<br> 
-                                            prompt responses and their constant availability to assist.
+                                            Their support team is very responsive. I always appreciate their prompt responses and their constant availability to assist.
                                         </p>
                                         <h2 class="customer_name sas">Gloria T</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="flex flex-col justify-center items-center w-full">
-                                
-                                    
-                                    
-                                    <div class="flex flex-col justify-center items-center w-full">
-                                        <span class="rating">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </span>
-                                        <p class="comment sas ">
-                                            I’m so grateful for their support team’s guidance. I’ve learned a lot, especially why 
-                                            people can be bounced from flights. The Finchglow Travels team is the best! All my justifications 
-                                            for bringing the company on board have paid off and I’m glad that my team lead who gave approval has 
-                                            also benefited from Finchglow Travels support.
-                                        </p>
-                                        <h2 class="customer_name sas">Ozioma I</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas">Peoples Operations Executive</p>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
                                     </div>
                                 </div>
                             </div>
@@ -324,7 +293,7 @@
                                             They made my entire travel process seamless.
                                         </p>
                                         <h2 class="customer_name sas">Vivian I</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas">Admin and Travel Desk Personnel</p>
+                                        <p class="text-[16px] leading-[24px] text-left partern">Admin and Travel Desk Personnel</p>
                                     </div>
                                 </div>
                             </div>
@@ -348,31 +317,7 @@
                                             up to giving cashback to agents when there are such opportunities. I love working with them!
                                         </p>
                                         <h2 class="customer_name sas">Sarah</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas">Travel Agent</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="flex flex-col justify-center items-center w-full">
-                                
-                                    
-                                
-                                    <div class="flex flex-col justify-center items-center w-full">
-                                        <span class="rating">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </span>
-                                        <p class="comment sas">
-                                            Travel Agent - The Finchglow Travels’ team is amazing! They make my day 
-                                            everytime I have to work with them, especially with their travel deals, transparency and 
-                                            honesty, up to giving cashback to agents when there are such opportunities. I love working with them!.
-                                        </p>
-                                        <h2 class="customer_name sas">Adamu W</h2>
-                                        <p class="sas text-[16px] leading-[24px] text-left">Head of Finance</p>
+                                        <p class="text-[16px] leading-[24px] text-left partern">Travel Agent</p>
                                     </div>
                                 </div>
                             </div>
@@ -394,7 +339,7 @@
                                             with the team quite seamless.
                                         </p>
                                         <h2 class="customer_name sas">Comfort U</h2>
-                                        <p class="sas text-[16px] leading-[24px] text-left sas">Trade Partner</p>
+                                        <p class="sas text-[16px] leading-[24px] text-left partern">Trade Partner</p>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +361,7 @@
                                             reasons why I continually choose Finchglow Travels.
                                         </p>
                                         <h2 class="customer_name sas">Ngozi O</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
                                     </div>
                                 </div>
                             </div>
@@ -439,7 +384,7 @@
                                             keeps me constantly updated and sends reminders a few days to the trip.
                                         </p>
                                         <h2 class="customer_name sas">Kunle O</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
                                     </div>
                                 </div>
                             </div>
@@ -462,7 +407,7 @@
                                             with constant changes in the post-Covid era due to the weekly industry updates I receive.
                                         </p>
                                         <h2 class="customer_name sas">Adebayo O</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
                                     </div>
                                 </div>
                             </div>
@@ -486,7 +431,7 @@
                                             great attention to details.
                                         </p>
                                         <h2 class="customer_name sas">Adeola A</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas">Trade Partner</p>
+                                        <p class="text-[16px] leading-[24px] text-left partern">Trade Partner</p>
                                     </div>
                                 </div>
                             </div>
@@ -510,7 +455,7 @@
                                             with the hotel and flight booking at the very last minute.
                                         </p>
                                         <h2 class="customer_name sas">Ayinde O</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
                                     </div>
                                 </div>
                             </div>
@@ -531,7 +476,7 @@
                                             PCR services are cheap and convenient. <br>They come to test me at home.
                                         </p>
                                         <h2 class="customer_name sas">Kosoko D.</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
                                     </div>
                                 </div>
                             </div>
@@ -552,7 +497,7 @@
                                             Student fares are affordable, <br>cheaper than most.
                                         </p>
                                         <h2 class="customer_name sas">Adanne A</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
                                     </div>
                                 </div>
                             </div>
@@ -574,7 +519,7 @@
                                             The account managers are very helpful. <br>They answer every question.
                                         </p>
                                         <h2 class="customer_name sas">Ugochi P</h2>
-                                        <p class="text-[16px] leading-[24px] text-left sas"></p>
+                                        <p class="text-[16px] leading-[24px] text-left partern"></p>
                                     </div>
                                 </div>
                             </div>
@@ -582,6 +527,7 @@
                             
    
                         </div>
+
                         <div class="relative bottom-0 flex  justify-center items-center w-full gap-2 max-w-[1280px] px-[15px] at500:px-[20px] my-0 mx-auto">
                             <div class="button-next float-right p-2 ">
                                 <i class="fa-solid fa-arrow-left !text-[#697E94] hover:!text-[#0260EE] cursor-pointer"></i>
@@ -621,8 +567,8 @@
                         </div>
                     </div>
 
-                    <div class="relative z-[20] flex justify-end items-end w-full ">
-                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="relative bottom-[-78px] text-center right-0 bg-[#697E94] h-[36px] w-[158px] pt-[8px] px-[15px]">
+                    <div class="relative z-[20] flex justify-center items-center silver:justify-end silver:items-end w-full ">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="relative bottom-[-78px] text-center right-0 bg-[#697E94] h-[36px] w-[158px] py-[8px] px-[15px]">
                             <a href="#top" class="back-to-top-box flex gap-[10px] !text-[#FFFFFF] ">Back to top
                                 <img class="back-to-top w-[20px] H-[20px]" src="image/service/icon/Frame 39920.png" alt="arrow up">
                             </a>
@@ -787,15 +733,11 @@
 
     </div>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/pages_navigation.js"></script>
+    <script src="js/about.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script> -->
 </body>
 </html>

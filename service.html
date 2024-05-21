@@ -20,10 +20,11 @@
     <div class="relative flex flex-col justify-center items-center w-full bg-black">
         <header id="top"  class="relative w-full h-auto flex flex-col justify-center items-center  ">
         
-            <nav id="navbar1" class="z-[9999] fixed top-0 h-[114px] pt-[46px] pb-[26px] bg-[#F1F5FC] flex md:items-center silver:justify-between w-full ">
+            <nav id="navbar1" class="z-[999] fixed top-0 h-[114px] pt-[46px] pb-[26px] bg-[#F1F5FC] flex md:items-center silver:justify-between w-full ">
             
-                <div class="z-[9999] flex md:items-center silver:justify-between w-full  2xl:w-[1280px] px-[15px] at500:px-[64px] my-0 mx-auto ">
-                    <div class="flex justify-between silver:justify-start items-center relative w-full silver:pr-[20px]">
+                <div class="z-[9999] flex silver:justify-between w-full  2xl:w-[1280px] px-[15px] at500:px-[64px] my-0 mx-auto ">
+
+                    <div class="flex justify-between silver:justify-start items-center relative w-full silver:w-[300px] ">
                         <!-- logo controls -->
                         <div class="text-2xl cursor-pointer w-[122.07px] h-[29.52px]">
                             <a class="w-full" href="index.html">
@@ -33,48 +34,43 @@
                         </div>
                         <!-- menu controls -->
                         <span class="text-3xl cursor-pointer mx-2 silver:hidden block h-[21.86px] w-[17.21px] ">
-                            <div class="z-[9999]" id="close-Icon" onclick="toggleIcons(), openIcon()">
-                                <img id="second-icon" class="openMenu w-full h-full transition-all duration-300 ease-in-out" src="image/Buttons Container.png" alt="menu"  onclick="show()">
-                                <!-- <img id="first-icon" class="openMenu w-full h-full z-10 transition-all duration-300 ease-in-out" src="image/Buttons Container (1).png" alt="menu"  onclick="show()"> -->
+                            <div class="z-[9999]" id="close-Icon" onclick="toggleIcons(), openIcon() ">
+                                <img class=" w-full h-full transition-all duration-300 ease-in-out" src="image/Buttons Container.png" alt="menu" >
                             </div>
-                            <div id="open-Icon" class="closeMenu hidden" onclick="toggleIcons(), closeIcon()">
-                                <i id="icon" class="fa-solid fa-xmark transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
+                            <div id="open-Icon" class="closeMenu hidden" onclick="toggleIcons(), closeIcon() ">
+                                <i class="fa-solid fa-xmark !text-[#05284C] transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
                             </div>
                         </span>
                         <!-- menu controls -->
                     </div>
                     <!-- drop-menu list -->
-                    <div class="px-2">
-                        <ul id="open1" class="cass flex flex-col silver:flex-row justify-center items-center z-[888] silver:z-auto float-left rounded-[8px] 
+                    <div class="silver:relative flex justify-end items-end silver:w-[548px]">
+                        <ul id="open1" class="cass flex flex-col silver:flex-row justify-end items-center z-[888] silver:z-auto float-left rounded-[8px] 
                             silver:static  absolute bg-[#F1F5FC]  w-full left-0  top-[-555px] transition-all ease-in duration-500 ">
                         
                 
-                            <li class="silver:mr-4 my-6 silver:my-0">
-                                <a class="inline-block py-2 w-[55px] !text-[#05284C] text-[12px] font-bold border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="about.html">About Us</a>
+                            <li class=" my-6 silver:my-0">
+                                <a class=" py-2  !text-[#05284C] text-[12px] font-bold border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="about.html">About Us</a>
                             </li>
-                            <li class="silver:mr-4 my-6 silver:my-0 ">
-                                <a class="py-2  text-[12px] font-bold !text-[#05284C] border-solid border-[#81B0F7] border-b-[4px] transition-all duration-300 ease-in-out " href="service.html">
+                            <li class=" my-6 silver:my-0 ">
+                                <a class="py-2  text-[12px] font-bold !text-[#05284C] border-solid border-[#81B0F7] border-b-[4px] hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out " href="service.html">
                                     Services
                                 </a>
                             </li>
-                            <li  class="silver:mr-4 my-6 silver:my-0">
-                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
-                                    Branches
-                                </a>
-                            </li>
-                            <li class="silver:mr-4 my-6 silver:my-0">
-                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
-                                    Product
-                                </a>
-                            </li>
-                            <li class="silver:mr-4 my-6 silver:my-0">
-                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="index.html">
+                            <li  class=" my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid  hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="blog.html">
                                     Blog
                                 </a>
                             </li>
-                            <li class="mx-4 px-[15px] silver:px-0 my-6 md:my-0 w-full md:w-[182px]">
-                                <div class="sm:hidden silver:block items-center justify-end lg:w-[182px] h-auto">
-                                    <a href="contact.html">
+                            <li class=" my-6 silver:my-0">
+                                <a class=" py-2  text-[12px] font-bold !text-[#05284C] border-solid hover:border-[#81B0F7] hover:border-b-[4px] transition-all duration-300 ease-in-out" href="branches.html">
+                                    Branches
+                                </a>
+                            </li>
+                            
+                            <li class=" silver:ml-8 silver:mr-0 px-[15px] silver:px-0 my-6 silver:my-0 w-full silver:w-[182px]">
+                                <div class=" items-center justify-end w-full silver:w-[182px] h-auto">
+                                    <a href="#">
                                         <button class="!text-[12px] !text-[#05284C]">Register as Trade Partner</button>
                                     </a>
                                 </div>
@@ -84,11 +80,11 @@
                     </div>
                     <!-- drop-menu list -->
                 
-                    <!-- <div class="flex items-center justify-end w-[65px] h-auto ">
-                        <a href="contact.html">
+                    <div class="flex items-center justify-end w-[65px] h-auto silver:hidden">
+                        <a href="#">
                             <button class="!text-[12px] !text-[#FFFFFF] !bg-[#05284C] !px-[12px] !border-none">Login</button>
                         </a>
-                    </div>  -->
+                    </div> 
                 </div>
             </nav>
 
@@ -174,8 +170,8 @@
 
                     <div class="flex flex-col lg:flex-row justify-between items-center  w-full h-auto ">
 
-                        <div class="relative lg:bottom-[-78px] flex justify-start items-start w-full h-auto mb-[30px] lg:mb-0">
-                            <img src="image/service/tickets.jpeg" class="w-full h-auto lg:w-[559px] lg:h-[656px] object-cover" alt="">
+                        <div class="relative lg:bottom-[-78px] flex justify-start items-start w-full h-auto mb-[30px] lg:mb-0 ">
+                            <img src="image/service/tickets.jpeg" class="w-full h-[300px] lg:w-[559px] lg:h-[656px] object-cover" alt="">
                         </div> 
 
                         <div class="relative flex flex-col justify-center items-center w-full h-auto text-left ">
@@ -198,7 +194,7 @@
                                     Look no further! Join our esteemed affiliate program, Trade Partner Plus, and say hello to a 
                                     tomorrow of limitless possibilities.
                                 </span>
-                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn !text-[#0260EE] ">Why Choose Us
+                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="trade.html" class="btn !text-[#0260EE] ">Why Choose Us
                                     <img class="w-[11.67px]" src="image/Icon.png" alt="arrow right">
                                 </a>
                            </div>
@@ -234,7 +230,7 @@
                                 your company's travel needs. That's where we come in – your dedicated travel partner 
                                 committed to transforming how your team travels.
                             </span>
-                            <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn !text-[#0260EE] ">Why Choose Us
+                            <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="corporate.html" class="btn !text-[#0260EE] ">Why Choose Us
                                 <img class="w-[11.67px]" src="image/Icon.png" alt="arrow right">
                             </a>
                         </div>
@@ -275,7 +271,7 @@
                                     to your individual or group needs, whether leisurely getaways or strategic business 
                                     ventures.
                                 </span>
-                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn !text-[#0260EE] ">Why Choose Us
+                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="bespoke.html" class="btn !text-[#0260EE] ">Why Choose Us
                                     <img class="w-[11.67px]" src="image/Icon.png" alt="arrow right">
                                 </a>
                             </div>
@@ -310,7 +306,7 @@
                                 Introducing our premium range of ancillary services – the perfect companions to enrich your travel experience 
                                 like never before.
                             </span>
-                            <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="#" class="btn !text-[#0260EE] ">
+                            <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" href="ancillary.html" class="btn !text-[#0260EE] ">
                                 Why Choose Our Ancillary Services
                                 <img class="w-[11.67px]" src="image/Icon.png" alt="arrow right">
                             </a>
@@ -345,9 +341,9 @@
                         </div>
                     </div>
 
-                    <div class="relative z-[20] flex justify-end items-end w-full ">
-                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="relative bottom-[-78px] text-center right-0 bg-[#697E94] h-[36px] w-[158px] pt-[8px] px-[15px]">
-                            <a href="#top" class="back-to-top-box flex gap-[10px] !text-[#FFFFFF] ">Back to top
+                    <div class="relative z-[20] flex justify-center items-center silver:justify-end silver:items-end w-full ">
+                        <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"  class="relative flex justify-center items-center bottom-[-78px] text-center right-0 bg-[#697E94] h-[36px] w-[158px] py-[8px] px-[15px]">
+                            <a href="#top" class="back-to-top-box flex justify-center items-center  gap-[10px] !text-[#FFFFFF] ">Back to top
                                 <img class="back-to-top w-[20px] H-[20px]" src="image/service/icon/Frame 39920.png" alt="arrow up">
                             </a>
                         </span>
@@ -360,7 +356,7 @@
                 <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[64px] my-0 mx-auto">
                     <div class="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
                         
-                        <div class="flex flex-col justify-between w-full md:w-[340px] md:h-[244px] gap-[42px]  at500:gap-0">
+                        <div class="flex flex-col justify-between w-full md:w-[403px] md:h-[244px] gap-[42px]  at500:gap-0">
                             <div class="text-2xl cursor-pointer w-[128.07px] h-[36.02px]">
                                 <a class="w-full" href="index.html">
                                     <img class="w-full h-auto transition-all duration-300 ease-in-out" src="image/FT_logo_X5-01.png" alt="logo">
@@ -379,86 +375,77 @@
                                     </li> -->
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class=" w-[182.74px] h-[60px] mix-blend-multiply">
                                         <a href="#">
-                                            <img src="image/Accredited Agent logo.png" alt="Accredited Agent logo">
+                                            <img src="image/Accredited Agent logo.png" class="w-[182.74px] h-[60px] object-cover" alt="Accredited Agent logo">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="flex  justify-between md:h-[244px] w-full md:w-[320px] gap-[32px]">
+                        <div class="flex  justify-between md:h-[244px] w-full md:w-[385px] gap-[32px]">
 
-                            <div class="w-full md:w-[144px]">
+                            <div class="w-full md:w-[176.5px]">
                                 <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
-                                    <li>
-                                        <a class="font-semibold font-Metropolis text-[16px] leading-[24px] text-[#0260EE]">Product</a>
-                                    </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="index.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Overview</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="about.html">
+                                            About us
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="about.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Features</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="trade.html">
+                                            Trade Partner Plus
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="works.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Solutions</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="corporate.html">
+                                            Corporate Travel Management
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="works.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Tutorials</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="bespoke.html">
+                                            Leisure Travel
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="works.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Pricing</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="ancillary.html">
+                                            Ancillary Services
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="works.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Releases</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="#">
+                                            Products
                                         </a>
                                     </li>
+                                    
                                 </ul>
                             </div>
                             <!----contact Us -->
-                            <div class="w-full md:w-[144px]">
+                            <div class="w-full md:w-[176.5px]">
                                 <ul class=" md:flex flex-col justify-center items-start text-left gap-[12px]">
-                                    <li>
-                                        <a class="font-semibold font-Metropolis text-[16px] leading-[24px] text-[#0260EE]">Services</a>
-                                    </li>
+                                    
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="index.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Blog</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="blog.html">
+                                            Blog
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="about.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Newsletter</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="newsletter.html">
+                                            Newsletter
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="works.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Events</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="branches.html">
+                                            Branches
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="works.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Help centre</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="faq.html">
+                                            FAQ
                                         </a>
                                     </li>
                                     <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="works.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Tutorials</a>
-                                        </a>
-                                    </li>
-                                    <li data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                                        <a href="works.html">
-                                            <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]">Support</a>
+                                        <a class="font-medium font-Metropolis text-[16px] leading-[24px] text-[#506982] hover:text-[#166534]" href="testimonials.html">
+                                            Testimonials
                                         </a>
                                     </li>
                                 </ul>
@@ -510,8 +497,7 @@
         </footer>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/pages_navigation.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
