@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>finchglo travels</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="src/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -69,7 +70,7 @@
                             <li class=" silver:ml-8 silver:mr-0 px-[15px] silver:px-0 my-6 silver:my-0 w-full silver:w-[182px]">
                                 <div class=" items-center justify-end w-full silver:w-[182px] h-auto">
                                     <a href="#">
-                                        <button class="!text-[12px]">Register as Trade Partner</button>
+                                        <button class="!text-[12px]" onclick="openOverlay()">Register as Trade Partner</button>
                                     </a>
                                 </div>
                             </li>
@@ -80,12 +81,45 @@
                 
                     <div class="flex items-center justify-end w-[65px] h-auto silver:hidden">
                         <a href="contact.html">
-                            <button class="log !text-[12px] !px-[12px] !border-none">Login</button>
+                            <button class="log !text-[12px] !px-[12px] !border-none" >Login</button>
                         </a>
                     </div> 
                 </nav>
 
             </div>
+            <!-- overlay form -->
+            <div class="overlay z-[88] " id="overlay">
+                <div class="overlay-content">
+                    <div class="form-container">
+                        <div class="flex justify-between items-start w-full">
+                            <div>
+                                <h2>Sign Up Trade Partner</h2>
+                                <p>Please fill the form below</p>
+                            </div>
+                           
+                            <img src="image/service/icon/iconamoon_close.png" class="h-[25px] w-[25px] object-cover" onclick="closeOverlay()" alt="close">
+                            
+                        </div>
+                        <form>
+                            <label for="full-name">Full Name <span style="color: red;">*</span></label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Enter full name" required>
+                            
+                            <label for="address">Address <span style="color: red;">*</span></label>
+                            <input type="text" id="address" name="address" placeholder="Enter address" required>
+                            
+                            <label for="email">Email <span style="color: red;">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+                            
+                            <label for="phone">Phone <span style="color: red;">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="0805764483" required>
+                            
+                            <button type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- overlay form -->
+            
         </header>
         
         <section id="top" class="wrap">
@@ -724,7 +758,7 @@
                                 and agencies.
                             </span>
                             <div class="flex items-center justify-end w-[135px] h-auto">
-                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="rob" href="contact.html">
+                                <a data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="rob" href="readblog.html">
                                     Go to blog
                                 </a>
                             </div>
@@ -796,7 +830,9 @@
                                                 Building your API Stack
                                             </h5>
                                            <div data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="relative w-[24px] h-[28px]  cursor-pointer">
-                                            <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
+                                            <a href="readblog.html">
+                                                <img class="relative hover:right-[-6px] w-[11px] transition-all duration-75 ease-in-out" src="image/arrow-up.png" alt="arrow up">
+                                            </a>
                                            </div>
                                         </div>
                                         <span data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" class="txt5 text-[#667085]">
@@ -1745,6 +1781,19 @@
 
         </footer>
     </div>
+    <!-- sign up function -->
+    <script>
+        function openOverlay() {
+           const overlay = document.getElementById('overlay');
+           overlay.classList.add('active');
+       }
+
+       function closeOverlay() {
+           const overlay = document.getElementById('overlay');
+           overlay.classList.remove('active');
+       }
+   </script>
+   <!-- sign up function ends-->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/home_navigation.js"></script>
     <script src="js/index.js"></script>

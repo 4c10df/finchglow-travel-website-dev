@@ -128,6 +128,12 @@ h6{
     color: #05284C;
     font-family: "Metropolis";
 }
+.txt7{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: "Metropolis";
+}
 
 p{
     font-weight: 400;
@@ -143,7 +149,13 @@ p{
     .cass{
       background: none;
     }
+    header ul.cass li {
+        color: #FFFFFF; /* Set the default text color */
+        transition: all 3s ease;
+    }
+    
 }
+
 .bgColor{
     background-color: #F1F5FC;
     transition: all 3s ease;
@@ -161,7 +173,7 @@ header nav ul li{
 }
 
 ul.cass li {
-    color: #FFFFFF; /* Set the default text color */
+    color: #05284C; /* Set the default text color */
     transition: all 3s ease;
 }
 ul.cass li button{

@@ -37,3 +37,19 @@ function toggleIcons() {
     gotIcon.classList.toggle('hidden'); // Toggle the 'hidden' class
 }
 //nav controls ends
+
+
+
+//// sign up function 
+
+    function openOverlay() {
+       const overlay = document.getElementById('overlay');
+       overlay.classList.add('active');
+   }
+
+   function closeOverlay() {
+       const overlay = document.getElementById('overlay');
+       overlay.classList.remove('active');
+   }
+
+/// sign up function ends

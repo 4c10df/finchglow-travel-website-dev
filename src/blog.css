@@ -52,3 +52,30 @@
 .page-number.active {
     color: #2563EB;
 } 
+
+
+
+/* Ensure the parent container has enough height for the sticky behavior */
+.relative {
+    overflow: visible;
+  }
+  
+  /* Make the sidebar sticky */
+  .sidebar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Adjust this value based on your header height or desired offset */
+  }
+  
+  
+  .sidebar {
+    flex: 0 0 384px; /* Set the width of the sidebar */
+  }
+ 
+
+
+.copy-message {
+    color: green;
+    font-size: 14px;
+    margin-left: 10px;
+}
