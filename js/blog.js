@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 0,
         slidesPerGroup: 1,
         loop: true,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         loopFillGroupWithBlank: true,
         pagination: {
             el: '.swiper-pagination',
@@ -35,9 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // testimonial slider code
 
-// our blogs 
+
+
+
+// our blogs
 document.addEventListener('DOMContentLoaded', () => {
-    // Add your JavaScript for slider functionality here
     const slider = document.querySelector('.slider');
     const sliderContent = document.querySelector('.slider-content');
     const slides = document.querySelectorAll('.slide');
@@ -47,43 +49,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let slideWidth = slides[0].clientWidth;
     let currentIndex = 0;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let isDragging = false;
+    let animationID = 0;
+    const swipeThreshold = 50; // Minimum distance for swipe to be considered
 
-    // Set initial position
     sliderContent.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
 
-    // Update slideWidth on window resize
     window.addEventListener('resize', () => {
         slideWidth = slides[0].clientWidth;
         updateSliderPosition();
     });
 
-    // Function to handle next slide
     function nextSlide() {
-        currentIndex++;
-        if (currentIndex >= slides.length) {
-            currentIndex = slides.length - 1;
-            nextBtn.disabled = true;
-        } else {
-            prevBtn.disabled = false;
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
             updateSliderPosition();
             updatePagination();
         }
     }
 
-    // Function to handle previous slide
     function prevSlide() {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = 0;
-            prevBtn.disabled = true;
-        } else {
-            nextBtn.disabled = false;
+        if (currentIndex > 0) {
+            currentIndex--;
             updateSliderPosition();
             updatePagination();
         }
     }
 
     function updateSliderPosition() {
+        sliderContent.style.transition = 'transform 0.3s ease-out';
         sliderContent.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
     }
 
@@ -105,14 +102,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Event listeners for prev and next buttons
     prevBtn.addEventListener('click', prevSlide);
     nextBtn.addEventListener('click', nextSlide);
 
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    sliderContent.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    sliderContent.addEventListener('touchmove', (e) => {
+        touchEndX = e.touches[0].clientX;
+    });
+
+    sliderContent.addEventListener('touchend', () => {
+        handleGesture();
+    });
+
+    sliderContent.addEventListener('mousedown', (e) => {
+        touchStartX = e.pageX;
+    });
+
+    sliderContent.addEventListener('mousemove', (e) => {
+        touchEndX = e.pageX;
+    });
+
+    sliderContent.addEventListener('mouseup', () => {
+        handleGesture();
+    });
+
+    function handleGesture() {
+        const deltaX = touchEndX - touchStartX;
+        if (Math.abs(deltaX) > swipeThreshold) {
+            if (deltaX > 0 && currentIndex > 0) {
+                prevSlide();
+            } else if (deltaX < 0 && currentIndex < slides.length - 1) {
+                nextSlide();
+            }
+        }
+    }
+
+    sliderContent.addEventListener('dragstart', (e) => e.preventDefault());
 });
 // our blogs 
-
-
 
 
 

@@ -2829,7 +2829,7 @@ span.next-btn:hover, span.prev-btn:hover{
 
 @media (max-width: 560px) {
   .home .content h1{
-    font-size: 3em;
+    font-size: 34px;
     line-height: 60px;
   }
 }
@@ -3159,6 +3159,14 @@ span.next-btn:hover, span.prev-btn:hover{
 }
 
 @media (min-width: 500px){
+  .at500\:\!block{
+    display:block !important;
+  }
+
+  .at500\:flex{
+    display:flex;
+  }
+
   .at500\:gap-0{
     gap:0px;
   }
@@ -3236,6 +3244,10 @@ span.next-btn:hover, span.prev-btn:hover{
   .sm\:px-0{
     padding-left:0px;
     padding-right:0px;
+  }
+
+  .sm\:text-\[24px\]{
+    font-size:24px;
   }
 
   .sm\:text-\[61px\]{
@@ -3834,16 +3846,8 @@ span.next-btn:hover, span.prev-btn:hover{
     width:584px;
   }
 
-  .xl\:w-\[595px\]{
-    width:595px;
-  }
-
   .xl\:w-\[609px\]{
     width:609px;
-  }
-
-  .xl\:w-\[652px\]{
-    width:652px;
   }
 
   .xl\:w-\[722px\]{

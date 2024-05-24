@@ -20,7 +20,7 @@
         <header id="navbar" class="fixed flex pt-[46px] pb-[26px]  h-[114px] left-0 top-0 w-full z-[9999] transition-all duration-300 ease-in-out ">
             <div class="static w-full silver:flex justify-center items-center  2xl:w-[1280px] px-[15px] py-[10px] at500:px-[40px] my-0 mx-auto">
     
-                <nav class="h-auto flex md:items-center silver:justify-between w-full px-[15px] sm:px-0">
+                <nav class="h-auto flex md:items-center silver:justify-between w-full sm:px-0">
                
                     <div class="flex justify-between silver:justify-start items-center relative w-full silver:w-[300px] ">
                         <!-- logo controls -->
@@ -37,7 +37,7 @@
                                 <img id="first-icon" class="openMenu w-full h-full z-10 transition-all duration-300 ease-in-out" src="image/Buttons Container (1).png" alt="menu"  onclick="show()">
                             </div>
                             <div id="open-Icon" class="closeMenu hidden" onclick="toggleIcons(), closeIcon()">
-                                <i id="icon" class="fa-solid fa-xmark transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
+                                <i id="icon" class="fa-solid fa-xmark !text-[#05284C] transition-all duration-300 ease-in-out absolute text-[25px] top-[7px]" ></i>
                             </div>
                         </span>
                         <!-- menu controls -->
@@ -124,24 +124,24 @@
         
         <section id="top" class="wrap">
             <div class="home">
-                <img class="img-slide active transition-all ease-in-out duration-500" src="image/background-img.jpeg" >
-                <img class="img-slide transition-all ease-in-out duration-500" src="image/20191101-Dawn-over-the-Dolomites.jpg">
-                <img class="img-slide transition-all ease-in-out duration-500" src="image/waterski2.webp">
-                <img class="img-slide transition-all ease-in-out duration-500" src="image/0_h2iP-6qo5GkYTh0K.jpg">
-                <img class="img-slide transition-all ease-in-out duration-500" src="image/206-webp-ayousef-espanioly-DA_tplYgTow-unsplash.webp" >
+                <img id="slide1" class="img-slide active transition-all ease-in-out duration-500" src="image/background-img.jpeg" >
+                <img id="slide2" class="img-slide transition-all ease-in-out duration-500" src="image/20191101-Dawn-over-the-Dolomites.jpg">
+                <img id="slide3" class="img-slide transition-all ease-in-out duration-500" src="image/waterski2.webp">
+                <img id="slide4" class="img-slide transition-all ease-in-out duration-500" src="image/0_h2iP-6qo5GkYTh0K.jpg">
+                <img id="slide5" class="img-slide transition-all ease-in-out duration-500" src="image/206-webp-ayousef-espanioly-DA_tplYgTow-unsplash.webp" >
                 <!--auto container-->
                 <div class="relative flex flex-col justify-center items-center w-full 2xl:w-[1280px] px-[15px] at500:px-[40px] my-0 mx-auto">
                     <!--content text-->
                     <div id="content1" class="content active" style="text-align: left;">
                         <div class=" absolute bottom-[-309px] flex flex-col text-left w-full">
-                            <h1 class="text-[#E6EAED] uppercase" style="transition: all 0s ease 0s; text-align: left; line-height: 52px; font-weight: 900; ">
+                            <h1 class="text-[#E6EAED] uppercase " style="transition: all 0s ease 0s; text-align: left; line-height: 52px; font-weight: 900; ">
                                 Turning
                                 <br> 
                                 Busniess dreams
                                 <br> 
                                 into reality
                             </h1>
-                            <p class="text-[#E6EAED] text-[24px] " style="transition: all 0s ease 0s; line-height: 32px; font-weight: 600;">
+                            <p class="text-[#E6EAED] text-[16px] sm:text-[24px] " style="transition: all 0s ease 0s; line-height: 32px; font-weight: 600;">
                                 A travel agent’s agent, connecting travellers
                                 <br> 
                                 with the world for over 18 years.
@@ -1036,7 +1036,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide !hidden at500:!block">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
                                     
@@ -1084,7 +1084,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide !hidden at500:!block">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
                                   
@@ -1108,7 +1108,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide !hidden at500:!block">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
                                     
@@ -1178,7 +1178,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide !hidden at500:!block">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
                                    
@@ -1201,7 +1201,7 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-slide">
+                            <div class="swiper-slide !hidden at500:!block">
                                 <div class="flex flex-col justify-center items-center w-full">
                                 
                                   
@@ -1609,7 +1609,7 @@
 
         <footer id="down" class="relative flex flex-col justify-center items-center w-full h-auto " >
             <section class="bg-[#05284C]  relative  flex flex-col justify-center items-center w-full h-auto ">
-                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px]  pt-[70px] mb-[60px] px-[64px] my-0 mx-auto">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px]  pt-[70px] mb-[60px] px-[15px] at500:px-[64px] my-0 mx-auto">
                     
                     <!-- start growing your business -->
                     <div class="flex flex-col justify-center items-center text-center w-full">
@@ -1638,7 +1638,7 @@
             </section>
             <!-- copy rights, products & services -->
             <section class="bg-footer-pop relative flex flex-col justify-center items-center w-full h-auto ">
-                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[64px] my-0 mx-auto">
+                <div class="static  w-full flex flex-col justify-center items-center 2xl:w-[1280px] pt-[50px] px-[15px] at500:px-[64px] my-0 mx-auto">
                     <div class="w-full flex flex-col md:flex-row gap-[48px] justify-between items-center mb-[30px]">
                         
                         <div class="flex flex-col justify-between w-full md:w-[403px] md:h-[244px] gap-[42px]  at500:gap-0">
