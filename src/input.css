@@ -10,20 +10,8 @@
 
 
 
-@font-face {
-    font-family: 'Metropolis';
-    src: url('fonts/Metropolis-ExtraLight.otf') format('otf'), /* 400 */
-         url('fonts/Metropolis-Light.otf') format('otf'), /* 500 */
-         url('fonts/Metropolis-Regular.otf') format('otf'), /* 600 */
-         url('fonts/Metropolis-Medium.otf') format('otf'), /* 700 */
-         url('fonts/Metropolis-SemiBold.otf') format('otf'), /* 800 */
-         url('fonts/Metropolis-Bold.otf') format('otf'); /* 900 */
-    font-weight: normal;
-    font-style: normal;
-}
-  
 
-
+@import './fonts.css';
  
 @tailwind base;
 @tailwind components;

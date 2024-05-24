@@ -61,7 +61,7 @@ module.exports = {
 
       fontFamily: {
         'open-sans' : ['Open Sans'],
-        'Metropolis' : ['Metropolis'],
+        metropolis: ['Metropolis', 'sans-serif'],
         'palatino' : ['Averta'],
         'garamond' : ['"Galano Grotesque"'],
         'mono' : ['"Averta" '],

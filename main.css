@@ -6,24 +6,9 @@
   font-family: 'Metropolis', sans-serif;
 }
 
-@font-face {
-  font-family: 'Metropolis';
-
-  src: url('fonts/Metropolis-ExtraLight.otf') format('otf'), /* 400 */
-         url('fonts/Metropolis-Light.otf') format('otf'), /* 500 */
-         url('fonts/Metropolis-Regular.otf') format('otf'), /* 600 */
-         url('fonts/Metropolis-Medium.otf') format('otf'), /* 700 */
-         url('fonts/Metropolis-SemiBold.otf') format('otf'), /* 800 */
-         url('fonts/Metropolis-Bold.otf') format('otf');
-
-  /* 900 */
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-/* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com */
+/*
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1933,8 +1918,8 @@ video {
   text-align:right;
 }
 
-.font-Metropolis{
-  font-family:Metropolis;
+.font-metropolis{
+  font-family:Metropolis, sans-serif;
 }
 
 .\!text-\[12px\]{
@@ -3175,10 +3160,6 @@ span.next-btn:hover, span.prev-btn:hover{
 
   .at500\:flex{
     display:flex;
-  }
-
-  .at500\:h-\[474px\]{
-    height:474px;
   }
 
   .at500\:gap-0{
