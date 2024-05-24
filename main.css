@@ -3177,8 +3177,16 @@ span.next-btn:hover, span.prev-btn:hover{
     display:flex;
   }
 
+  .at500\:h-\[474px\]{
+    height:474px;
+  }
+
   .at500\:gap-0{
     gap:0px;
+  }
+
+  .at500\:bg-fixed{
+    background-attachment:fixed;
   }
 
   .at500\:px-\[20px\]{
